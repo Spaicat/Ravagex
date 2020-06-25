@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Ravagex</title>
+	<link rel="stylesheet" href="style/mainStyle.css">
+	<script src="script/mainScript.js"></script>
+</head>
+<body>
+	<div id="mainPage">
+		<div id="mainMenu">
+			<div id="mainTitle">
+				<img src="images/RavagexTitle.png" id="imageMainTitle" alt="Titre Ravagex" />
+			</div>
+			<ul>
+				<li class="mainMenuButton">
+					<a href="jeuGuy/index.php">
+						<span>jeuGuy</span>
+					</a>
+				</li>
+				<li class="mainMenuButton">
+					<a href="simonGame/index.php">
+						<span>simonGame</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

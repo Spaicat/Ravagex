@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>simonGame</title>
+	<link rel="stylesheet" href="../style/mainStyle.css">
+	<script defer src="../script/simonGame/selectPlayers.js"></script>
+</head>
+<body>
+	<div id="simonPage">
+		<div id="simonMain">
+			<div id="simonTitle">
+				<span>simonGame</span>
+				<!--<img src="images/RavagexTitle.png" id="imagejeuGuyTitle" alt="Titre jeuGuy" />-->
+			</div>
+			<ul id="simonMenu">
+				<span>Entrez le nom des participants : </span>
+				<li>
+					<input class="nameField" type="text">
+					<button class="btn-remove">-</button>
+				</li>
+			</ul>
+			<span id="errorName"></span>
+			<button onclick="addPlayer()">Ajouter un joueur</button>
+			<button onclick="playSimon()">Jouer</button>
+			<button onclick="window.location='../index.php';">Quitter</button>
+		</div>
+	</div>
+</body>
+</html>

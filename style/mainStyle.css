@@ -1,0 +1,8 @@
+#jeuGuyTitle span {
+    font-family: cursive;
+    font-size: 2em;
+}
+
+.errorName {
+    background-color: red;
+}
