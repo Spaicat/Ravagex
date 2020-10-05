@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>jeuGuy</title>
 	<link rel="stylesheet" href="../style/mainStyle.css">
-	<script defer src="../script/jeuGuy.js"></script>
+	<script defer src="../script/jeuGuy_selectPlayer.js"></script>
 </head>
 <body>
 	<div id="jeuGuyPage">
