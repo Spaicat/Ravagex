@@ -1,31 +1,72 @@
 {
-    "listeType": "Hard",
-    "sentences":
-    [
-        {
-            "text": "Ceci est un exemple avec [nom] et [nom]",
-            "type": "normal",
-            "minimumPlayer": 2
-        },
-        {
-            "text": "Ceci est un exemple avec [nom] et [nom]",
-            "type": "normal",
-            "minimumPlayer": 2
-        },
-        {
-            "text": "Ceci est un exemple avec [nom] et [nom]",
-            "type": "normal",
-            "minimumPlayer": 2
-        },
-        {
-            "text": "Ceci est un exemple de virus",
-            "type": "virus",
-            "minimumPlayer": 0
-        },
-        {
-            "text": "Ceci est un exemple avec [nom] et [nom]",
-            "type": "normal",
-            "minimumPlayer": 2
-        }
-    ]
+    "listEasy":
+    {
+        "sentences" : [
+            {
+                "text": "Ceci est un belle exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un exemple avec [nom] et [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 3,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un moche exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un exemple de virus",
+                "type": "virus",
+                "minPlayer": 0,
+                "details": "Fin de l'exemple du virus"
+            },
+            {
+                "text": "Ceci est un moyen exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            }
+        ]
+    },
+    "listHard":
+    {
+        "sentences" : [
+            {
+                "text": "Ceci est un belle exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un exemple avec [nom] et [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 3,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un moche exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un exemple de virus",
+                "type": "virus",
+                "minPlayer": 0,
+                "details": "Fin de l'exemple du virus"
+            },
+            {
+                "text": "Ceci est un moyen exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            }
+        ]
+    }
 }
