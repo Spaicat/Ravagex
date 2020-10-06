@@ -21,13 +21,37 @@
                 "details": ""
             },
             {
-                "text": "Ceci est un exemple de virus",
+                "text": "Ceci est 1 exemple de virus",
                 "type": "virus",
                 "minPlayer": 0,
-                "details": "Fin de l'exemple du virus"
+                "details": "Fin de l'exemple 1 du virus"
             },
             {
-                "text": "Ceci est un moyen exemple avec [nom] et [nom]",
+                "text": "Ceci est 2 exemple de virus",
+                "type": "virus",
+                "minPlayer": 0,
+                "details": "Fin de l'exemple 2 du virus"
+            },
+            {
+                "text": "Ceci est 3 exemple de virus",
+                "type": "virus",
+                "minPlayer": 0,
+                "details": "Fin de l'exemple 3 du virus"
+            },
+            {
+                "text": "Ceci est un b exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un a exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un c exemple avec [nom] et [nom]",
                 "type": "normal",
                 "minPlayer": 2,
                 "details": ""
@@ -56,13 +80,37 @@
                 "details": ""
             },
             {
-                "text": "Ceci est un exemple de virus",
+                "text": "Ceci est 1 exemple de virus pour [nom]",
                 "type": "virus",
-                "minPlayer": 0,
-                "details": "Fin de l'exemple du virus"
+                "minPlayer": 1,
+                "details": "Fin de l'exemple 1 du virus pour [nom]"
             },
             {
-                "text": "Ceci est un moyen exemple avec [nom] et [nom]",
+                "text": "Ceci est 2 exemple de virus",
+                "type": "virus",
+                "minPlayer": 0,
+                "details": "Fin de l'exemple 2 du virus"
+            },
+            {
+                "text": "Ceci est 3 exemple de virus pour [nom] et [nom]",
+                "type": "virus",
+                "minPlayer": 2,
+                "details": "Fin de l'exemple 3 du virus pour [nom] et [nom]"
+            },
+            {
+                "text": "Ceci est un b exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un a exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un c exemple avec [nom] et [nom]",
                 "type": "normal",
                 "minPlayer": 2,
                 "details": ""
