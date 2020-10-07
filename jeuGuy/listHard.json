@@ -62,13 +62,67 @@
     {
         "sentences" : [
             {
-                "text": "Ceci est un belle exemple avec [nom] et [nom]",
+                "text": "Ceci est un belle 1exemple avec [nom] et [nom]",
                 "type": "normal",
                 "minPlayer": 2,
                 "details": ""
             },
             {
-                "text": "Ceci est un exemple avec [nom] et [nom] et [nom]",
+                "text": "Ceci est un belle 2exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un belle 3exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un belle 4exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un belle 5exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un belle 6exemple avec [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 2,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un 1exemple avec [nom] et [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 3,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un 2exemple avec [nom] et [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 3,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un 3exemple avec [nom] et [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 3,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un 4exemple avec [nom] et [nom] et [nom]",
+                "type": "normal",
+                "minPlayer": 3,
+                "details": ""
+            },
+            {
+                "text": "Ceci est un 5exemple avec [nom] et [nom] et [nom]",
                 "type": "normal",
                 "minPlayer": 3,
                 "details": ""

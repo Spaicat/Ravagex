@@ -17,24 +17,37 @@ function getXMLHttpRequest() {
     return xhr;
 }
 
-function ajaxGet(callback) {
-    //On crée l'objet XHR
-    var xhr = getXMLHttpRequest();
-    //On l'ouvre = type, url/file, async
-    xhr.open("GET", "../jeuGuy/listHard.json", true);
+function ajaxGet(url) {
+    return new Promise(function(resolve, reject) {
+        //On crée l'objet XHR
+        var xhr = getXMLHttpRequest();
 
-    //On attends une réponse au format JSON
-    xhr.responseType = 'json';
-    //Envoie la requête
-    xhr.send();
+        //On l'ouvre = type, url/file, async
+        xhr.open("GET", url, true);
 
-    xhr.onload = function() {
-        //HTTP status : 200=OK, 403=Forbidden, 404=Not Found
-        if (xhr.status == 200) {
-            var fileJSON = xhr.response;
-            callback(fileJSON);
+        xhr.onload = function() {
+            //HTTP status : 200=OK, 403=Forbidden, 404=Not Found
+            if (xhr.status === 200) {
+                resolve(xhr.response);
+            }
+            else {
+                reject(xhr);
+            }
         }
-    }
+
+        //Envoie la requête
+        xhr.send();
+    })
+}
+
+var catchError = function(e) {
+    console.error('Erreur ajax', e);
+}
+
+function getList() {
+    return ajaxGet("../jeuGuy/listHard.json").then(function(fileJSON) {
+        return JSON.parse(fileJSON);
+    });
 }
 
 //Liste des noms des joueurs
@@ -46,7 +59,7 @@ var sentencesChosen = [];
  */
 function pickSentences(fileJSON) {
     sentencesChosen = [];
-    var listSentences = fileJSON.listHard.sentences
+    const listSentences = fileJSON.listHard.sentences
     //Pour rechercher un certain type (si structure json change) :
     //listSentences.filter(sentence => sentence.type == "normal");
 
@@ -69,16 +82,16 @@ function pickSentences(fileJSON) {
 
     //Nombre de virus pioché
     var nPickedVirus = 0;
-
     //On pioche un certains nombre de phrases
-    while (nPicked > 0) {
+    while (nPicked > 0 && sentencesNotPick.length > 0) {
         //On prend le numéro de la phrase choisit au hasard
         var nRandomSentences = Math.floor(Math.random()*sentencesNotPick.length);
+
         if (sentencesNotPick[nRandomSentences].type == "virus") {
             if(nPickedVirus < maxVirus) {
                 //On supprime la phrase choisit dans notre liste de phrase pas encore tiré
                 sentencesChosen.push(sentencesNotPick.splice(nRandomSentences, 1)[0]);
-                nPicked -= 2;
+                nPicked--;
             }
         }
         else {
@@ -102,26 +115,19 @@ function initSentences() {
 
         //Pour le nombre de joueur que la phrase necessite
         for (var j = 0; j < sentencesChosen[i].minPlayer; j++) {
-            //On regarde si le joueur n'a pas déjà été tiré
-            do {
-                //On choisit un joueur au hasard
-                var playerPicked = namesOfPlayers[Math.floor(Math.random()*namesOfPlayers.length)];
-                //On regarde si on ne l'a pas déjà choisi
-                var isPlayerNotPicked = playersNotPicked.indexOf(playerPicked) > -1;
+            //On choisit un joueur au hasard
+            var playerPicked = playersNotPicked[Math.floor(Math.random()*playersNotPicked.length)];
 
-                //Si le joueur pris au hasard n'a pas été choisi
-                if (isPlayerNotPicked) {
-                    //On retire ce joueur de la liste des joueurs non pris
-                    playersNotPicked.splice(playersNotPicked.indexOf(playerPicked), 1);
-                    //On remplace le eltToFind par les nom du joueur
-                    sentencesChosen[i].text = sentencesChosen[i].text.replace(eltToFind, playerPicked);
-                    //Si la phrase est un virus et qu'on trouve un eltToFind dans les details
-                    if (sentencesChosen[i].type == "virus" && sentencesChosen[i].details.indexOf(eltToFind) > -1) {
-                        //On remplace le eltToFind par le nom du joueur (le même que le text)
-                        sentencesChosen[i].details = sentencesChosen[i].details.replace(eltToFind, playerPicked);
-                    }
-                }
-            } while (!isPlayerNotPicked);
+            //On retire ce joueur de la liste des joueurs non pris
+            playersNotPicked.splice(playersNotPicked.indexOf(playerPicked), 1);
+
+            //On remplace le eltToFind par le nom du joueur
+            sentencesChosen[i].text = sentencesChosen[i].text.replace(eltToFind, playerPicked);
+            //Si la phrase est un virus et qu'on trouve un eltToFind dans les details
+            if (sentencesChosen[i].type == "virus" && sentencesChosen[i].details.indexOf(eltToFind) > -1) {
+                //On remplace le eltToFind par le nom du joueur (le même que le text)
+                sentencesChosen[i].details = sentencesChosen[i].details.replace(eltToFind, playerPicked);
+            }
         }
     }
 }
@@ -131,10 +137,10 @@ function initSentences() {
  */
 function startGame() {
     namesOfPlayers = JSON.parse(localStorage.getItem("namesOfPlayers"));
-    ajaxGet((fileJSON) => {
+    getList().then((fileJSON) => {
         pickSentences(fileJSON);
         initSentences();
-    });
+    }).catch(catchError);
 }
 
 startGame();
