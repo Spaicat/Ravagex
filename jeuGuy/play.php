@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>jeuGuy</title>
 	<link rel="stylesheet" href="../style/mainStyle.css">
+	<link rel="shortcut icon" type="image/png" href="../include/r_favicon.png"/>
 	<script defer src="../script/jeuGuy_inGame.js"></script>
 </head>
 <body>
