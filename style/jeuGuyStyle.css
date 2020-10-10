@@ -117,6 +117,17 @@ body {
 					color: white;
 					cursor: pointer;
 				}
+		#select-mode-container {
+			display: flex;
+		}
+			.select-mode-box {
+				margin: auto;
+			}
+				.select-mode-box input {
+				}
+				.select-mode-box label {
+					font-size: 14pt;
+				}
 		#errorName {
 		}
 

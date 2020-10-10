@@ -23,7 +23,6 @@
 			</div>
 			<ul id="menu-players">
 			</ul>
-			<span id="errorName"></span>
 			<div id="select-mode-container">
 				<div class="select-mode-box">
 					<input id="radio-easy" type="radio" name="mode-selection" />
@@ -34,6 +33,7 @@
 					<label for="radio-hard">Hard</label>
 				</div>
 			</div>
+			<span id="errorName"></span>
 			<button onclick="playjeuGuy()">Jouer</button>
 			<a href="#" class="quitbtn" onclick="window.location='../index.php';"></a>
 		</div>
