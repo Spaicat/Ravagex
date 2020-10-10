@@ -3,18 +3,30 @@
 <head>
 	<meta charset="utf-8">
 	<title>jeuGuy</title>
-	<link rel="stylesheet" href="../style/mainStyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style/reset.css">
+	<link rel="stylesheet" href="../style/jeuGuyStyle.css">
 	<link rel="shortcut icon" type="image/png" href="../include/r_favicon.png"/>
 	<script defer src="../script/jeuGuy_inGame.js"></script>
 </head>
 <body>
-	<div id="jeuGuyPlayPage">
-		<div id="jeuGuyPlayMain">
-			<div id="jeuGuyPlaySentencesMain">
-			</div>
-			<button onclick="">Suivant</button>
-			<button onclick="window.location='index.php';">Quitter</button>
+	<main id="play-main">
+		<div id="sentence-main">
+			<p id="sentence-p">Chargement ...</p>
 		</div>
-	</div>
+		<div id="progress-container">
+			<div class="progress-bar">
+				<div class="progress-value"></div>
+			</div>
+		</div>
+		<a href="#" class="quitbtn" onclick="window.location='index.php';"></a>
+		<div id="container-click">
+			<div id="previous-click"></div>
+			<div id="next-click"></div>
+		</div>
+	</main>
+	<!--<div id="flip-phone">
+		<img src="../images/svg/turning-phone.svg">
+	</div>-->
 </body>
 </html>

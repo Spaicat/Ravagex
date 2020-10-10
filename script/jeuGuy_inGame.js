@@ -22,6 +22,18 @@ async function getList() {
 }
 
 /**
+ * Renvoie un entier aléatoire entre min et max [min, max]
+ * @param  {int} min la valeur minimum que peut atteindre l'entier
+ * @param  {int} max la valeur maximum que peut atteindre l'entier
+ * @return {int}     L'entier tiré au hasard
+ */
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+/**
  * On pioche les phrases
  */
 function pickSentences(namesOfPlayers, fileJSON) {
@@ -39,9 +51,9 @@ function pickSentences(namesOfPlayers, fileJSON) {
     }
 
     //Nombre de phrases qu'il nous reste à choisir
-    let nPicked = 20;
+    let nPicked = 30;
     //Nombre de virus max
-    const maxVirus = 2;
+    const maxVirus = 4;
     //On voit s'il y a assez de phrases dans le json
     if (nPicked > listSentences.length) {
         nPicked = listSentences.length;
@@ -106,9 +118,22 @@ function initSentences(namesOfPlayers, sentencesChosen) {
     return sentencesChosen;
 }
 
+/**
+ * Place les virus en tant que phrase
+ * @param  {Array} sentences tableau des phrases retenues
+ */
 function placeVirus(sentences) {
+    for (let i = 0; i < sentences.length; i++) {
+        if (sentences[i].type == "virus") {
+            const indexRandVirus = getRandomInt(3, 6);
+            const sentenceVirus = {"text": sentences[i].details, "type": "virusEnd"};
+            sentences.splice(i+indexRandVirus, 0, sentenceVirus);
+        }
+    }
     console.log(sentences);
 }
+
+let sentences = [];
 
 /**
  * Lance le jeu, initialise toutes les ressources
@@ -116,15 +141,69 @@ function placeVirus(sentences) {
 function startGame() {
     const namesPromise = getNamesOfPlayers();
     const listPromise = getList();
-
     Promise.all([namesPromise, listPromise]).then((promises) => {
         let sentencesChosen = pickSentences(promises[0], promises[1]);
         sentencesChosen = initSentences(promises[0], sentencesChosen);
         sentencesChosen.forEach(function(v){ delete v.minPlayer });
+        placeVirus(sentencesChosen);
         return sentencesChosen;
-    }).then((sentences) => {
-        placeVirus(sentences);
+    }).then((sentencesFinal) => {
+        let sentenceText = document.getElementById("sentence-p");
+        sentenceText.innerHTML = sentencesFinal[0].text;
+        sentences = sentencesFinal;
     }).catch((e) => {console.error("startGame() :", e)});
 }
 
 startGame();
+
+
+
+let currentSentence = 0;
+
+function nextSentence() {
+    if (currentSentence < sentences.length-1) {
+        currentSentence++;
+        let sentenceText = document.getElementById("sentence-p");
+        sentenceText.innerText = sentences[currentSentence].text;
+        progressBarChange();
+    }
+    else {
+        window.location = "../jeuGuy/play.php"
+    }
+}
+
+function previousSentence() {
+    if (currentSentence > 0) {
+        currentSentence--;
+        let sentenceText = document.getElementById("sentence-p");
+        sentenceText.innerText = sentences[currentSentence].text;
+        progressBarChange();
+    }
+}
+
+let backMainElt = document.getElementById("container-click");
+backMainElt.onclick = function (e) {
+    const item = e.target;
+    const previous = document.getElementById("previous-click");
+    const next = document.getElementById("next-click");
+    if(item === this || item === next) {
+        nextSentence();
+    }
+    else if (item === previous) {
+        previousSentence();
+    }
+}
+initProgressBar();
+function initProgressBar() {
+    const hexColor = ["ff4081", "0078fa", "ffa500", "ff0000"];
+    const bar = document.getElementsByClassName("progress-value")[0];
+    const indexHexColor = getRandomInt(0, hexColor.length);
+    bar.style.backgroundColor = "#" + hexColor[indexHexColor];
+}
+
+function progressBarChange() {
+    const bar = document.getElementsByClassName("progress-value")[0];
+    let widthCurrent = bar.style.width;
+    let widthFinal = currentSentence*100 / sentences.length;
+    bar.style.width = widthFinal + "%";
+}
