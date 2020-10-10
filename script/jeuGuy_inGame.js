@@ -5,6 +5,13 @@ async function getNamesOfPlayers() {
     });
 }
 
+async function getGameMode() {
+    return new Promise((resolve, reject) => {
+        const mode = localStorage.getItem("gameMode");
+        resolve(mode);
+    });
+}
+
 async function getList() {
     try {
         const response = await fetch("../jeuGuy/listHard.json");
@@ -36,9 +43,14 @@ function getRandomInt(min, max) {
 /**
  * On pioche les phrases
  */
-function pickSentences(namesOfPlayers, fileJSON) {
+function pickSentences(namesOfPlayers, gameMode, fileJSON) {
     let sentencesChosen = [];
-    const listSentences = fileJSON.listHard.sentences;
+    if (gameMode == "easy") {
+        listSentences = fileJSON.listEasy.sentences;
+    }
+    else {
+        listSentences = fileJSON.listHard.sentences;
+    }
     //Pour rechercher un certain type (si structure json change) :
     //listSentences.filter(sentence => sentence.type == "normal");
 
@@ -140,9 +152,11 @@ let sentences = [];
  */
 function startGame() {
     const namesPromise = getNamesOfPlayers();
+    const gameModePromise = getGameMode();
     const listPromise = getList();
-    Promise.all([namesPromise, listPromise]).then((promises) => {
-        let sentencesChosen = pickSentences(promises[0], promises[1]);
+
+    Promise.all([namesPromise, gameModePromise, listPromise]).then((promises) => {
+        let sentencesChosen = pickSentences(promises[0], promises[1], promises[2]);
         sentencesChosen = initSentences(promises[0], sentencesChosen);
         sentencesChosen.forEach(function(v){ delete v.minPlayer });
         placeVirus(sentencesChosen);

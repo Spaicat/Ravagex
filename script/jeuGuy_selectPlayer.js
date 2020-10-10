@@ -111,15 +111,26 @@ function playjeuGuy() {
 		namesOfPlayers.push(allNameInput[i].innerText);
 	}
 
+	let gameMode;
+	if (document.getElementById("radio-easy").checked) {
+		gameMode = "easy";
+	} else if(document.getElementById("radio-hard").checked) {
+		gameMode = "hard";
+	}
+
 	if (isAllNameValid()) {
-		loadGame(namesOfPlayers);
+		loadGame(namesOfPlayers, gameMode);
 	}
 }
 
-function loadGame(namesOfPlayers) {    
+function loadGame(namesOfPlayers, gameMode) {    
 	//Initialisation de la position des joueurs
 	localStorage.removeItem("namesOfPlayers");
 	localStorage.setItem("namesOfPlayers", JSON.stringify(namesOfPlayers));
+
+	localStorage.removeItem("gameMode");
+	localStorage.setItem("gameMode", gameMode);
+
     window.location='play.php';
 }
 
