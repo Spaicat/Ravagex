@@ -1,3 +1,43 @@
+function verifySentencesJSON() {
+    getList().then((fileJSON) => {
+        const listEasy = fileJSON.listEasy.sentences;
+        const listHard = fileJSON.listHard.sentences;
+        const eltToFind = "[nom]";
+        let regexEltToFind = /\[nom\]/g;
+
+        let allError = "";
+
+        let allErrorEasy = "";
+        for (let i = 0; i < listEasy.length; i++) {
+            let nbEltToFind = listEasy[i].text.match(regexEltToFind);
+            nbEltToFind = nbEltToFind == null ? 0 : nbEltToFind.length;
+            let easyMinPlayer = listEasy[i].minPlayer == nbEltToFind;
+
+            if (!easyMinPlayer) {
+                let lineMinPlayerError = 1+2+1 + i*6 + 2;
+                allErrorEasy += "Le nombre de joueur ne correspond pas au nombre de " + eltToFind + " dans text (ligne ~" + lineMinPlayerError + ")\n";
+            }
+        }
+
+
+        let allErrorHard = "";
+        for (let i = 0; i < listHard.length; i++) {
+            let nbEltToFind = listHard[i].text.match(regexEltToFind);
+            nbEltToFind = nbEltToFind == null ? 0 : nbEltToFind.length;
+            let easyMinPlayer = listHard[i].minPlayer == nbEltToFind;
+
+            if (!easyMinPlayer) {
+                let lineMinPlayerError = 4 + listEasy.length*6 + 5 + i*6 + 2;
+                allErrorHard += "Le nombre de joueur ne correspond pas au nombre de " + eltToFind + " dans text (ligne ~" + lineMinPlayerError + ")\n";
+            }
+        }
+        if (allErrorEasy.length > 0) {allError += "\nlistEasy : \n" + allErrorEasy}
+        if (allErrorHard.length > 0) {allError += "\nlistHard : \n" + allErrorHard}
+
+        if (allError.length > 0) {throw allError};
+    }).catch((e) => {console.error("verifySentencesJSON() : ", e)});
+}
+
 async function getNamesOfPlayers() {
     return new Promise((resolve, reject) => {
         const names = localStorage.getItem("namesOfPlayers");
@@ -14,7 +54,7 @@ async function getGameMode() {
 
 async function getList() {
     try {
-        const response = await fetch("../jeuGuy/listHard.json");
+        const response = await fetch("../jeuGuy/jeuGuySentences.json");
         if (response.ok) {
             const fileJSON = await response.json();
             return fileJSON;
@@ -45,6 +85,7 @@ function getRandomInt(min, max) {
  */
 function pickSentences(namesOfPlayers, gameMode, fileJSON) {
     let sentencesChosen = [];
+    let listSentences;
     if (gameMode == "easy") {
         listSentences = fileJSON.listEasy.sentences;
     }

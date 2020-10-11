@@ -3,13 +3,7 @@
     {
         "sentences" : [
             {
-              "text": "",
-              "type": "normal",
-              "minPlayer": 0,
-              "details": ""
-            },
-            {
-              "text": "[nom] boit une gorgée pour chaque fille présente. ",
+              "text": "[nom] boit une gorgée pour chaque fille présente.",
               "type": "normal",
               "minPlayer": 1,
               "details": ""
@@ -47,7 +41,7 @@
             {
               "text": "[nom] dessine quelque chose sur la joue de [nom], si l’un refuse 5 gorgées.",
               "type": "normal",
-              "minPlayer": 1,
+              "minPlayer": 2,
               "details": ""
             },
             {
@@ -89,13 +83,13 @@
             {
               "text": "[nom] distribue 2 gorgée.",
               "type": "normal",
-              "minPlayer": 2,
+              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] boit 1 gorgée.",
               "type": "normal",
-              "minPlayer": 2,
+              "minPlayer": 1,
               "details": ""
             },
             {
@@ -533,7 +527,7 @@
             {
               "text": "[nom] dévoile nous le surnom dont tu as le plus honte ou bois 3 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
+              "minPlayer": 1,
               "details": ""
             },
             {
@@ -758,7 +752,6 @@
               "minPlayer": 2,
               "details": "[nom] et [nom] n'êtes plus liés par l'amour"
             }
-            
         ]
     },
     "listHard":
@@ -1121,7 +1114,7 @@
         {
           "text": "[nom] récite l’alphabet à l’envers, une gorgée à chaque erreur.",
           "type": "normal",
-          "minPlayer": 2,
+          "minPlayer": 1,
           "details": ""
         },
         {
@@ -1193,7 +1186,7 @@
         {
           "text": "[nom] dévoile nous le surnom dont tu as le plus honte ou bois 4 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
+          "minPlayer": 1,
           "details": ""
         },
         {
@@ -1265,7 +1258,7 @@
         {
           "text": "[nom] doit mimer une levrette avec une chaise, s’il refuse SHOT.",
           "type": "normal",
-          "minPlayer": 0,
+          "minPlayer": 1,
           "details": ""
         },
         {
@@ -1796,7 +1789,6 @@
           "minPlayer": 3,
           "details": "[nom] va retirer le haut de l'Apollon elle-même."
         }
-
       ]
     }
 }
