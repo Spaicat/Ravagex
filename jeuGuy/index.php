@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../style/jeuGuyStyle.css">
 	<link rel="shortcut icon" type="image/png" href="../include/r_favicon.png"/>
 	<script defer src="../script/jeuGuy_selectPlayer.js"></script>
+	<script defer src="../script/jeuGuy_JSON_verify.js"></script>
 </head>
 <body>
 	<main id="select-main">

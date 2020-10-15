@@ -705,13 +705,13 @@
               "details": "[nom] n'est plus un loveur"
             },
             {
-              "text": "[nom] a les yeux de serpent.",
+              "text": "[nom] a les yeux de serpent. Chaque personne qui te regarde dans les yeux bois une gorgée.",
               "type": "virus",
               "minPlayer": 1,
               "details": "[nom] n'a plus les yeux de serpent."
             },
             {
-              "text": "[nom] a les yeux de serpent.",
+              "text": "[nom] a les yeux de serpent. Chaque personne qui te regarde dans les yeux bois une gorgée.",
               "type": "virus",
               "minPlayer": 1,
               "details": "[nom] n'a plus les yeux de serpent."
@@ -764,12 +764,6 @@
           "details": ""
         },
         {
-          "text": "Cul sec social",
-          "type": "normal",
-          "minPlayer": 0,
-          "details": ""
-        },
-        {
           "text": "Les filles, élisez le plus beau garçon de la soirée. L'Apollon boira 5 gorgées.",
           "type": "normal",
           "minPlayer": 0,
@@ -806,7 +800,7 @@
           "details": ""
         },
         {
-          "text": "Cul sec pour [nom], [nom]. Vous devez boire les bras entrecroisés.",
+          "text": "Cul sec pour [nom] et [nom]. Vous devez boire les bras entrecroisés.",
           "type": "normal",
           "minPlayer": 2,
           "details": ""
@@ -818,13 +812,13 @@
           "details": ""
         },
         {
-          "text": "Ceux qui ont déjà eu un rêve érotique, buvez 3 gorgées.",
+          "text": "Si tu as déjà eu un rêve érotique, bois 3 gorgées.",
           "type": "normal",
           "minPlayer": 0,
           "details": ""
         },
         {
-          "text": "Ceux qui ont déjà utilisé des préservatifs parfumés ou fluorescents, buvez 4 gorgées.",
+          "text": "Si tu as déjà utilisé des préservatifs parfumés ou fluorescents, bois 4 gorgées.",
           "type": "normal",
           "minPlayer": 0,
           "details": ""
@@ -1736,10 +1730,22 @@
           "details": "[nom] et [nom] peuvent reprendre leur t-shirt"
         },
         {
+          "text": "[nom] et [nom] échangent un vêtement sous peine d'un cul sec.",
+          "type": "virus",
+          "minPlayer": 2,
+          "details": "[nom] et [nom] peuvent reprendre leur vêtement"
+        },
+        {
+          "text": "[nom] et [nom] échangent un vêtement sous peine d'un cul sec.",
+          "type": "virus",
+          "minPlayer": 2,
+          "details": "[nom] et [nom] peuvent reprendre leur vêtement"
+        },
+        {
           "text": "[nom], tu es le petit toutou de [nom], tu dois exécuter tous les ordres qu’il/elle te donne, ou tu bois 4 gorgées.",
           "type": "virus",
           "minPlayer": 2,
-          "details": "[nom] n'est plus un toutou."
+          "details": "[nom] n'est plus le toutou de [nom]."
         },
         {
           "text": "[nom] et [nom] sont désormais des jumeaux, ils doivent boire à chaque fois que l’un boit.",
@@ -1760,16 +1766,16 @@
           "details": "[nom] et [nom] ne sont plus jumeaux"
         },
         {
-          "text": "[nom], qui préfères-tu embrasser entre [nom] et [nom] ? En cas de refus, cul sec tous les trois !",
+          "text": "[nom], qui préfères-tu embrasser entre [nom] et [nom] ? La bouche sulfureuse boira 4 gorgées",
           "type": "virus",
           "minPlayer": 3,
-          "details": "[nom] va nous faire le plaisir d'embrasser la personne qu'elle/il a choisi."
+          "details": "[nom] va nous faire le plaisir d'embrasser la personne qu'elle/il avait choisi entre [nom] et [nom], en cas de refus : 1 cul sec."
         },
         {
           "text": "[nom], qui préfères-tu embrasser entre [nom] et [nom] ? 5 gorgées pour la personne désignée.",
           "type": "virus",
           "minPlayer": 3,
-          "details": "[nom] va nous faire le plaisir d'embrasser la personne qu'elle/il a choisi."
+          "details": "[nom] va nous faire le plaisir d'embrasser la personne qu'elle/il avait choisi entre [nom] et [nom], en cas de refus : 1 cul sec."
         },
         {
           "text": "[nom] à toi de juger : entre [nom] et [nom], qui embrasse le mieux ? La personne désignée boira 5 gorgées.",
