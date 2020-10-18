@@ -1,6 +1,6 @@
 body {
-	background-color: white;
-	color: black;
+	background-color: #1f1f1f;
+	color: white;
 	font-family: "Inter";
     overflow-y: overlay;
 }
@@ -78,10 +78,8 @@ body {
 	}
 		#jeuGuy-title {
 		}
-			#jeuGuy-title h1 {
-				margin: 0;
-				font-family: cursive;
-				font-size: 70pt;
+			#jeuGuy-logo {
+				fill: white;
 			}
 		.name-entry-container {
 		}
@@ -96,7 +94,6 @@ body {
 				position: relative;
 				margin: 5px 0;
 				width: 100%;
-				background: #f0f1f2;
 				border: 1px solid #d9dcdf;
 				border-radius: 8px;
 				list-style: none;
