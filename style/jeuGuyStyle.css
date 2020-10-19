@@ -1,7 +1,14 @@
+:root {
+	--back-color: #131313;
+	--btn-color: #84FFB9;
+	--btn-color-error: #DC6379;
+	--btn-color-hover: #BEFFDA;
+}
+
 body {
-	background-color: #1f1f1f;
+	background-color: var(--back-color);
 	color: white;
-	font-family: "Inter";
+	font-family: "Sk-Modernist-Regular", "Inter", Sans-serif;
     overflow-y: overlay;
 }
 
@@ -10,6 +17,15 @@ body {
 @font-face {
 	font-family: "Inter";
 	src: url(../include/fonts/Inter-VariableFont.ttf);
+}
+
+@font-face {
+	font-family: "Sk-Modernist-Regular";
+	src: url(../include/fonts/Sk-Modernist-Regular.otf);
+}
+@font-face {
+	font-family: "Sk-Modernist-Bold";
+	src: url(../include/fonts/Sk-Modernist-Bold.otf);
 }
 
 /*---------------------------|Main-InGame|---------------------------*/
@@ -32,11 +48,9 @@ body {
 		#sentence-p {
 			margin: 0;
 			font-size: 30pt;
-			font-variation-settings: 'wght' 600;
 		}
 	#progress-container {
 		width: 100%;
-		height: 30px;
 	}
 	#container-click {
 		display: flex;
@@ -71,51 +85,81 @@ body {
 }
 	#select-box {
 		margin: auto;
-		padding: 2em;
-		max-width: 30em;
+		max-width: 50em;
 		width: 100%;
 		text-align: center;
 	}
 		#jeuGuy-title {
+			padding: 1em 2em;
 		}
 			#jeuGuy-logo {
 				fill: white;
 			}
-		.name-entry-container {
-		}
 		#text-desc {
+			font-size: 22px;
 		}
+		.name-entry-container {
+			display: flex;
+			position: relative;
+			margin: 1em 5em;
+			align-items: center;
+		}
+			.name-entry {
+				flex-grow: 1;
+				margin: 0 10px 0 0;
+				padding: 0 10px;
+				width: 60%;
+				background: none;
+				border: 2px solid var(--btn-color);
+				border-radius: 10px;
+				line-height: 50px;
+				color: white;
+				text-align: center;
+				font-size: 20px;
+			}
+			.name-entry-container button {
+				width: fit-content;
+				line-height: 50px;
+			}
 		#menu-players {
-			margin: 1.5em 0;
+			margin: 1em 5em;
 			padding: 0;
 		}
 			#menu-players li {
 				display: flex;
 				position: relative;
-				margin: 5px 0;
+				margin: 20px 0;
 				width: 100%;
-				border: 1px solid #d9dcdf;
-				border-radius: 8px;
+				align-items: center;
+				background-color: #2E2E2E;
+				border-radius: 10px;
 				list-style: none;
+				text-align: left;
+				line-height: 50px;
 			}
 				.nameField {
-					flex: 1;
-					padding: 5px;
-					font-size: 12pt;
-					font-variation-settings: 'wght' 600;
+					margin: 0 20px;
+					flex-grow: 1;
+					font-size: 20px;
 				}
 				.btn-remove {
-					background-color: #dcdcdc;
+					margin: 0 20px 0 0;
+					height: 23px;
+					width: 23px;
+					background: none;
 					padding: 0 10px;
 					border: none;
+					border-radius: 50%;
+					color: white;
 				}
 				.btn-remove:hover {
-					background-color: #b7b7b7;
-					color: white;
+					background-color: var(--btn-color-error);
+					color: black;
 					cursor: pointer;
 				}
 		#select-mode-container {
 			display: flex;
+			margin: 1em 5em;
 		}
 			.select-mode-box {
 				margin: auto;
@@ -127,16 +171,35 @@ body {
 				}
 		#errorName {
 		}
+		.container-playbtn {
+			margin: 1em 5em;
+		}
+			.playbtn {
+				cursor: pointer;
+				width: 100%;
+				background-color: var(--btn-color);
+				color: black;
+				border: none;
+				border-radius: 10px;
+				line-height: 50px;
+				font-family: "Sk-Modernist-Bold", "Inter", Sans-serif;
+				font-size: 22px;
+			}
+				.playbtn:hover {
+					background-color: var(--btn-color-hover);
+				}
 
 /*---------------------------|Progress-bar|---------------------------*/
 .progress-bar {
-	width: 100%;
-	background-color: #b7b7b7;
+	margin: 5px;
+	background-color: #2E2E2E;
+	border-radius: 50px;
 }
 	.progress-value {
 		width: 0%;
 		height: 30px;
-		background-color: #ff4081; /*or #0078fa or #ffa500 or #ff0000*/
+		background-color: var(--btn-color);
+		border-radius: 50px;
 		transition: all .5s;
 	}
 
@@ -148,11 +211,8 @@ body {
 	right: 2em;
 	width: 3em;
 	height: 3em;
-	opacity: 0.3;
 }
-.quitbtn:hover {
-	opacity: 1;
-}
+	
 	.quitbtn:before, .quitbtn:after {
 		position: absolute;
 		top: 50%;
@@ -160,13 +220,17 @@ body {
 		content: ' ';
 		height: 100%;
 		width: 3px;
-		background-color: #333;
+		background-color: var(--btn-color);
 	}
 	.quitbtn:before {
 		transform: translate(-50%, -50%) rotate(45deg);
 	}
 	.quitbtn:after {
 		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+
+	.quitbtn:hover:after, .quitbtn:hover:before {
+		background-color: var(--btn-color-hover);
 	}
 
 /*---------------------------|Phone|---------------------------*/
@@ -188,3 +252,13 @@ body {
          display: flex;
     }
 }*/
+
+@media (max-width: 640px) {
+	.name-entry-container {
+		margin: 1em;
+	}
+
+	#sentence-p {
+		font-size: 24pt;
+	}
+}

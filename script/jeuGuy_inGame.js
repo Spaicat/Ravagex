@@ -43,8 +43,7 @@ function getRandomInt(min, max) {
 /**
  * On pioche les phrases
  */
-function pickSentences(namesOfPlayers, gameMode, fileJSON) {
-    let sentencesChosen = [];
+function pickAllSentences(namesOfPlayers, gameMode, fileJSON) {
     let listSentences;
     if (gameMode == "easy") {
         listSentences = fileJSON.listEasy.sentences;
@@ -62,14 +61,20 @@ function pickSentences(namesOfPlayers, gameMode, fileJSON) {
         if (namesOfPlayers.length >= listSentences[i].minPlayer)
             sentencesNotPick.push(listSentences[i]);
     }
+    return sentencesNotPick;
+}
 
+function pickSentences(namesOfPlayers, gameMode, fileJSON) {
+    let sentencesNotPick = pickAllSentences(namesOfPlayers, gameMode, fileJSON);
+
+    let sentencesChosen = [];
     //Nombre de phrases qu'il nous reste à choisir
     let nPicked = 30;
     //Nombre de virus max
     const maxVirus = 4;
     //On voit s'il y a assez de phrases dans le json
-    if (nPicked > listSentences.length) {
-        nPicked = listSentences.length;
+    if (nPicked > sentencesNotPick.length) {
+        nPicked = sentencesNotPick.length;
     }
 
     //Nombre de virus pioché
@@ -207,15 +212,6 @@ backMainElt.onclick = function (e) {
     else if (item === previous) {
         previousSentence();
     }
-}
-
-initProgressBar();
-
-function initProgressBar() {
-    const hexColor = ["ff4081", "0078fa", "ffa500", "ff0000"];
-    const bar = document.getElementsByClassName("progress-value")[0];
-    const indexHexColor = getRandomInt(0, hexColor.length);
-    bar.style.backgroundColor = "#" + hexColor[indexHexColor];
 }
 
 function progressBarChange() {

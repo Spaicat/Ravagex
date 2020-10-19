@@ -25,7 +25,7 @@
 			<span id="text-desc">Entrez le nom des participants : </span>
 			<div class="name-entry-container">
 				<input class="name-entry" type="text">
-				<button>Ajouter</button>
+				<button class="playbtn">Ajouter</button>
 			</div>
 			<ul id="menu-players">
 			</ul>
@@ -40,7 +40,9 @@
 				</div>
 			</div>
 			<span id="errorName"></span>
-			<button onclick="playjeuGuy()">Jouer</button>
+			<div class="container-playbtn">
+				<button class="playbtn" onclick="playjeuGuy()">Jouer</button>
+			</div>
 			<a href="#" class="quitbtn" onclick="window.location='../index.php';"></a>
 		</div>
 	</main>
