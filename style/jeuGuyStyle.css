@@ -40,7 +40,6 @@ body {
 	overflow-y: hidden;
 }
 	#sentence-main {
-		/*transform: rotate(90deg);*/
 		margin: auto;
 		padding: 2em;
 		text-align: center;
@@ -85,33 +84,37 @@ body {
 }
 	#select-box {
 		margin: auto;
-		max-width: 50em;
+		max-width: 100em;
 		width: 100%;
 		text-align: center;
 	}
 		#jeuGuy-title {
+			margin: auto;
 			padding: 1em 2em;
+			max-width: 50em;
 		}
 			#jeuGuy-logo {
 				fill: white;
 			}
-		#text-desc {
+		#select-box > span {
 			font-size: 22px;
 		}
 		.name-entry-container {
 			display: flex;
 			position: relative;
-			margin: 1em 5em;
+			margin: 1em auto;
 			align-items: center;
+			max-width: 50em;
 		}
 			.name-entry {
 				flex-grow: 1;
 				margin: 0 10px 0 0;
 				padding: 0 10px;
 				width: 60%;
+				max-width: 50em;
 				background: none;
 				border: 2px solid var(--btn-color);
-				border-radius: 10px;
+				border-radius: 30px;
 				line-height: 50px;
 				color: white;
 				text-align: center;
@@ -119,73 +122,117 @@ body {
 			}
 			.name-entry-container button {
 				width: fit-content;
-				line-height: 50px;
 			}
 		#menu-players {
-			margin: 1em 5em;
+			margin: 1em auto;
 			padding: 0;
+			max-width: 50em;
 		}
 			#menu-players li {
 				display: flex;
-				position: relative;
 				margin: 20px 0;
+				padding: 0 20px;
 				width: 100%;
 				align-items: center;
 				background-color: #2E2E2E;
-				border-radius: 10px;
+				border-radius: 30px;
 				list-style: none;
 				text-align: left;
 				line-height: 50px;
+				box-sizing: border-box;
 			}
 				.nameField {
-					margin: 0 20px;
-					flex-grow: 1;
+					flex: 1;
+					min-width: 0;
 					font-size: 20px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
 				}
 				.btn-remove {
-					margin: 0 20px 0 0;
-					height: 23px;
-					width: 23px;
+					display: flex;
+					height: 32px;
+					width: 32px;
+					overflow: hidden;
 					background: none;
-					padding: 0 10px;
 					border: none;
-					border-radius: 50%;
-					color: white;
+					border-radius: 30px;
+					fill: white;
 				}
 				.btn-remove:hover {
 					background-color: var(--btn-color-error);
-					color: black;
+					fill: black;
 					cursor: pointer;
 				}
+					.btn-remove svg {
+						margin: auto;
+						height: 12px;
+						width: 12px;
+					}
 		#select-mode-container {
-			display: flex;
 			margin: 1em 5em;
 		}
 			.select-mode-box {
-				margin: auto;
+				position: relative;
+				margin: 3em auto;
+				max-width: 36em;
 			}
 				.select-mode-box input {
+					display: none;
 				}
 				.select-mode-box label {
-					font-size: 14pt;
+					display: inline-block;
+					padding: 1em;
+					width: 100%;
+					border: 2px solid var(--btn-color);
+					border-radius: 30px;
+					overflow: hidden;
+					box-sizing: border-box;
+					cursor: pointer;
+					font-size: 40px;
+					text-align: center;
+				}
+				.select-mode-box input:checked + label:after {
+					content: "\2713";
+					width: 50px;
+					height: 50px;
+					line-height: 50px;
+					border-radius: 100%;
+					border: 5px solid var(--btn-color);
+					background-color: var(--back-color);
+					z-index: 999;
+					position: absolute;
+					top: -20px;
+					right: 0;
+					left:50%;
+					color: var(--btn-color);
+					transform:translateX(-50%);
+				}
+				.select-mode-box input:checked + label {
+					background-color: var(--btn-color);
+					color: black;
 				}
 		#errorName {
+			color: var(--btn-color-error);
 		}
-		.container-playbtn {
-			margin: 1em 5em;
+		.playbtn-container {
+			margin: 1em auto 4em;
+			max-width: 10em;
 		}
-			.playbtn {
+			.bigbtn {
 				cursor: pointer;
+				padding: 0 1em;
 				width: 100%;
 				background-color: var(--btn-color);
 				color: black;
 				border: none;
-				border-radius: 10px;
+				border-radius: 30px;
 				line-height: 50px;
 				font-family: "Sk-Modernist-Bold", "Inter", Sans-serif;
 				font-size: 22px;
+				overflow: hidden;
 			}
-				.playbtn:hover {
+				.bigbtn:hover {
 					background-color: var(--btn-color-hover);
 				}
 
@@ -193,7 +240,7 @@ body {
 .progress-bar {
 	margin: 5px;
 	background-color: #2E2E2E;
-	border-radius: 50px;
+	border-radius: 30px;
 }
 	.progress-value {
 		width: 0%;
@@ -214,13 +261,14 @@ body {
 }
 	
 	.quitbtn:before, .quitbtn:after {
+		content: ' ';
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		content: ' ';
+		width: 6px;
 		height: 100%;
-		width: 3px;
 		background-color: var(--btn-color);
+		border-radius: 30px;
 	}
 	.quitbtn:before {
 		transform: translate(-50%, -50%) rotate(45deg);
@@ -260,5 +308,11 @@ body {
 
 	#sentence-p {
 		font-size: 24pt;
+	}
+}
+
+@media (max-width: 440px) {
+	#menu-players {
+		margin: 1em;
 	}
 }

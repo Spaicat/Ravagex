@@ -22,13 +22,14 @@
 					<path class="cls-1" d="M158,245.13c3.22,0,3.23-5,0-5s-3.22,5,0,5Z" transform="translate(-134.03 -240.13)"/>
 				</svg>
 			</div>
-			<span id="text-desc">Entrez le nom des participants : </span>
+			<span>Entrez le nom des participants : </span>
 			<div class="name-entry-container">
 				<input class="name-entry" type="text">
-				<button class="playbtn">Ajouter</button>
+				<button class="bigbtn">Ajouter</button>
 			</div>
 			<ul id="menu-players">
 			</ul>
+			<span>Sélectionnez le mode de jeu : </span>
 			<div id="select-mode-container">
 				<div class="select-mode-box">
 					<input id="radio-easy" type="radio" name="mode-selection" />
@@ -39,10 +40,10 @@
 					<label for="radio-hard">Hard</label>
 				</div>
 			</div>
-			<span id="errorName"></span>
-			<div class="container-playbtn">
-				<button class="playbtn" onclick="playjeuGuy()">Jouer</button>
+			<div class="playbtn-container">
+				<button class="bigbtn" onclick="playjeuGuy()">Jouer</button>
 			</div>
+			<span id="errorName"></span>
 			<a href="#" class="quitbtn" onclick="window.location='../index.php';"></a>
 		</div>
 	</main>

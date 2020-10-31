@@ -148,19 +148,3 @@ a img { border: 0; }
 
 /* scripts */
 body > script {display: none !important;}
-
-/* skip-links */
-.skip-links {
-	position: absolute;
-}
-.skip-links a {
-	position: absolute;
-	left: -9999px;
-	padding: 0.5em;
-	background: #000;
-	color:#fff;
-	text-decoration: none;
-}
-.skip-links a:focus {
-	position: static;
-}

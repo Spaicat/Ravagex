@@ -14,26 +14,39 @@ function addPlayerEvent(e) {
 		nameEntry.value = "";
 	}
 }
+
+let nbLiPlayers = 0;
 /**
  * Ajoute un joueur dans la liste
  */
-function addPlayer(name) {
+function addPlayer(name, gender) {
 	const newPlayerLi = document.createElement("li");
 
-	//On ajoute l'input pour le nom
-	const input = document.createElement("span");
-	input.innerText = name;
-	input.classList.add("nameField");
-	newPlayerLi.appendChild(input);
+	//On ajoute le span pour le nom
+	const span = document.createElement("span");
+	span.innerText = name;
+	span.classList.add("nameField");
+	newPlayerLi.appendChild(span);
+
+	//On ajoute le choix du sexe
+	if (gender == null) {gender = (nbLiPlayers % 2) ? "M" : "F"};
+	const choiceSex = document.createElement("div");
+	choiceSex.classList.add("genderChoice");
+	choiceSex.innerHTML = "<input type=\"radio\" id=\"femmeInput\" name=\"genderInput" + nbLiPlayers + "\"" + ((gender == "F") ? " checked />" : "/>");
+	choiceSex.innerHTML += "<label for=\"femmeInput\">♀</label>";
+	choiceSex.innerHTML += "<input type=\"radio\" id=\"hommeInput\" name=\"genderInput" + nbLiPlayers + "\"" + ((gender == "M") ? " checked />" : "/>");
+	choiceSex.innerHTML += "<label for=\"hommeInput\">♂</label>";
+	newPlayerLi.appendChild(choiceSex);
 
 	//On ajoute le bouton pour supprimer
 	const button = document.createElement("button");
 	button.classList.add("btn-remove");
-	button.innerText = "X";
+	button.innerHTML = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 41.756 41.756\"><g><path d=\"M27.948,20.878L40.291,8.536c1.953-1.953,1.953-5.119,0-7.071c-1.951-1.952-5.119-1.952-7.07,0L20.878,13.809L8.535,1.465c-1.951-1.952-5.119-1.952-7.07,0c-1.953,1.953-1.953,5.119,0,7.071l12.342,12.342L1.465,33.22c-1.953,1.953-1.953,5.119,0,7.071C2.44,41.268,3.721,41.755,5,41.755c1.278,0,2.56-0.487,3.535-1.464l12.343-12.342l12.343,12.343c0.976,0.977,2.256,1.464,3.535,1.464s2.56-0.487,3.535-1.464c1.953-1.953,1.953-5.119,0-7.071L27.948,20.878z\"/></g></svg>";
 	newPlayerLi.appendChild(button);
 
 	guyMenu.appendChild(newPlayerLi);
 
+	nbLiPlayers++;
 	return newPlayerLi;
 }
 
@@ -106,15 +119,18 @@ function isAllNameValid() {
 function playjeuGuy() {
 	//On prend les noms entrés
 	const allNameInput = document.querySelectorAll("#menu-players li span");
+	const allGenderInput = document.querySelectorAll("#menu-players li .genderChoice");
 	let namesOfPlayers = [];
 	for (let i = 0; i < allNameInput.length; i++) {
-		namesOfPlayers.push(allNameInput[i].innerText);
+		let genderOfInput = (allGenderInput[i].firstElementChild.checked) ? "F" : "M";
+		namesOfPlayers.push({"name" : allNameInput[i].innerText, "gender" : genderOfInput});
 	}
 
 	let gameMode;
 	if (document.getElementById("radio-easy").checked) {
 		gameMode = "easy";
-	} else if(document.getElementById("radio-hard").checked) {
+	}
+	else if (document.getElementById("radio-hard").checked) {
 		gameMode = "hard";
 	}
 
@@ -139,7 +155,7 @@ function loadPlayers() {
 	names = JSON.parse(names);
 	if (names != null) {
 		for (let i = 0; i < names.length; i++) {
-			let playerLi = addPlayer(names[i]);
+			let playerLi = addPlayer(names[i].name, names[i].gender);
 		}
 	}
 }
