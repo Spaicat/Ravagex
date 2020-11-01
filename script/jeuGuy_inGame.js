@@ -14,7 +14,7 @@ async function getGameMode() {
 
 async function getList() {
     try {
-        const response = await fetch("../jeuGuy/jeuGuySentencesTest.json");
+        const response = await fetch("../jeuGuy/jeuGuySentences.json");
         if (response.ok) {
             const fileJSON = await response.json();
             return fileJSON;
@@ -53,11 +53,11 @@ function pickAllSentences(namesOfPlayers, gameMode, fileJSON) {
     }
     const eltToFind = "[nom]";
     let regexEltToFind = /\[nom\]/g;
-    let regexEltHommeToFind = /\[nomM\]/g;
-    let regexEltFemmeToFind = /\[nomF\]/g;
+    let regexEltMaleToFind = /\[nomM\]/g;
+    let regexEltFemaleToFind = /\[nomF\]/g;
 
-    let nbHomme = namesOfPlayers.filter(player => player.gender == "M").length;
-    let nbFemme = namesOfPlayers.filter(player => player.gender == "F").length;
+    let nbMale = namesOfPlayers.filter(player => player.gender == "M").length;
+    let nbFemale = namesOfPlayers.filter(player => player.gender == "F").length;
 
     let sentencesNotPick = [];
     for (let i = 0; i < listSentences.length; i++) {
@@ -65,18 +65,21 @@ function pickAllSentences(namesOfPlayers, gameMode, fileJSON) {
         let nbEltFinded = listSentences[i].text.match(regexEltToFind);
         nbEltFinded = nbEltFinded == null ? 0 : nbEltFinded.length;
 
-        let nbEltHommeFinded = listSentences[i].text.match(regexEltHommeToFind);
-        nbEltHommeFinded = nbEltHommeFinded == null ? 0 : nbEltHommeFinded.length;
+        let nbEltMaleFinded = listSentences[i].text.match(regexEltMaleToFind);
+        nbEltMaleFinded = nbEltMaleFinded == null ? 0 : nbEltMaleFinded.length;
 
-        let nbEltFemmeFinded = listSentences[i].text.match(regexEltFemmeToFind);
-        nbEltFemmeFinded = nbEltFemmeFinded == null ? 0 : nbEltFemmeFinded.length;
+        let nbEltFemaleFinded = listSentences[i].text.match(regexEltFemaleToFind);
+        nbEltFemaleFinded = nbEltFemaleFinded == null ? 0 : nbEltFemaleFinded.length;
 
         //On vérifie s'il y a bien, autant ou plus de joueur que la phrases en nécessite (en fonction du sexe)
-        let enoughElt = namesOfPlayers.length >= nbEltFinded;
-        let enoughEltHomme = nbHomme >= nbEltHommeFinded;
-        let enoughEltFemme = nbFemme >= nbEltFemmeFinded;
-        if (enoughElt && enoughEltHomme && enoughEltFemme)
-            sentencesNotPick.push(listSentences[i]);
+        let enoughEltHomme = nbMale >= nbEltMaleFinded;
+        let enoughEltFemme = nbFemale >= nbEltFemaleFinded;
+        let enoughPlayer = namesOfPlayers.length >= (nbEltFinded + nbEltMaleFinded + nbEltFemaleFinded);
+        if (enoughEltHomme && enoughEltFemme && enoughPlayer) {
+            let sentencesToPush = listSentences[i];
+            sentencesToPush["gender"] = {neutral: nbEltFinded, male: nbEltMaleFinded, female: nbEltFemaleFinded};
+            sentencesNotPick.push(sentencesToPush);
+        }
     }
     return sentencesNotPick;
 }
@@ -123,7 +126,7 @@ function pickSentences(namesOfPlayers, gameMode, fileJSON) {
 }
 
 /**
- * On configure les phrases
+ * On configure les phrases (met les noms)
  */
 function initSentences(namesOfPlayers, sentencesChosen) {
     //Element correspondant à ce qu'on doit remplacer par un nom d'un joueur
@@ -135,20 +138,34 @@ function initSentences(namesOfPlayers, sentencesChosen) {
         //Stocke les joueurs qu'on a pas encore choisie dans une phrase
         let playersNotPicked = namesOfPlayers.slice();
 
+        initSentence(sentencesChosen[i], eltToFind, sentencesChosen[i].gender.neutral);
+        initSentence(sentencesChosen[i], eltHommeToFind, sentencesChosen[i].gender.male);
+        initSentence(sentencesChosen[i], eltFemmeToFind, sentencesChosen[i].gender.female);
         //Pour le nombre de joueur que la phrase necessite
-        for (let j = 0; j < sentencesChosen[i].minPlayer; j++) {
-            //Choisit un joueur au hasard
-            let playerPicked = playersNotPicked[Math.floor(Math.random()*playersNotPicked.length)];
+        function initSentence(sentenceToInit, eltToFindGender, nbGender) {
+            for (let j = 0; j < nbGender; j++) {
+                //On prends la liste des joueurs à choisir (en fonction du genre)
+                let playerToPick;
+                if (eltToFindGender == eltFemmeToFind)
+                    playerToPick = playersNotPicked.filter(player => player.gender == "F");
+                else if (eltToFindGender == eltHommeToFind)
+                    playerToPick = playersNotPicked.filter(player => player.gender == "M");
+                else
+                    playerToPick = playersNotPicked;
 
-            //Retire ce joueur de la liste des joueurs non pris
-            playersNotPicked.splice(playersNotPicked.indexOf(playerPicked), 1);
+                //Choisit un joueur au hasard
+                let playerPicked = playerToPick[Math.floor(Math.random()*playerToPick.length)];
 
-            //Remplace le eltToFind par le nom du joueur
-            sentencesChosen[i].text = sentencesChosen[i].text.replace(eltToFind, playerPicked);
-            //Si la phrase est un virus et qu'on trouve un eltToFind dans les details
-            if (sentencesChosen[i].type == "virus" && sentencesChosen[i].details.indexOf(eltToFind) > -1) {
-                //Remplace le eltToFind par le nom du joueur (le même que le text)
-                sentencesChosen[i].details = sentencesChosen[i].details.replace(eltToFind, playerPicked);
+                //Retire ce joueur de la liste des joueurs non pris
+                playersNotPicked.splice(playersNotPicked.indexOf(playerPicked), 1);
+
+                //Remplace le eltToFind par le nom du joueur
+                sentenceToInit.text = sentenceToInit.text.replace(eltToFindGender, playerPicked.name);
+                //Si la phrase est un virus et qu'on trouve un eltToFind dans les details
+                if (sentenceToInit.type == "virus" && sentenceToInit.details.indexOf(eltToFindGender) > -1) {
+                    //Remplace le eltToFind par le nom du joueur (le même que le text)
+                    sentenceToInit.details = sentenceToInit.details.replace(eltToFindGender, playerPicked.name);
+                }
             }
         }
     }
@@ -159,7 +176,7 @@ function initSentences(namesOfPlayers, sentencesChosen) {
  * Place les virus en tant que phrase
  * @param  {Array} sentences tableau des phrases retenues
  */
-function placeVirus(sentences) {
+function putVirus(sentences) {
     for (let i = 0; i < sentences.length; i++) {
         if (sentences[i].type == "virus") {
             const indexRandVirus = getRandomInt(3, 6);
@@ -181,10 +198,10 @@ function startGame() {
     const listPromise = getList();
 
     Promise.all([namesPromise, gameModePromise, listPromise]).then((promises) => {
+        console.log(promises[0]);
         let sentencesChosen = pickSentences(promises[0], promises[1], promises[2]);
         sentencesChosen = initSentences(promises[0], sentencesChosen);
-        /*sentencesChosen.forEach(function(v){ delete v.minPlayer });*/
-        placeVirus(sentencesChosen);
+        putVirus(sentencesChosen);
         return sentencesChosen;
     }).then((sentencesFinal) => {
         let sentenceText = document.getElementById("sentence-p");
