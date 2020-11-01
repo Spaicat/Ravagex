@@ -5,751 +5,626 @@
             {
               "text": "[nom] boit une gorgée pour chaque fille présente.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] boit une gorgée pour chaque garçon présent.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Si tu as déjà fumé autres choses que du tabac, bois 3 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Toutes les filles, 2 gorgées !",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Tous les garçons, 2 gorgées !",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Chapeau ! la dernière personne à mettre ses mains sur sa tête, boit 3 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "[nom] dessine quelque chose sur la joue de [nom], si l’un refuse 5 gorgées.",
               "type": "normal",
-              "minPlayer": 2,
               "details": ""
             },
             {
               "text": "Les personnes en couple désignent ensemble une personne qui boira 3 gorgées",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Les personnes célibataire désignent ensemble une personne qui boira 3 gorgées",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "[nom] et [nom] buvez 3 gorgées.",
               "type": "normal",
-              "minPlayer": 2,
               "details": ""
             },
             {
               "text": "[nom] et [nom] buvez 3 gorgées.",
               "type": "normal",
-              "minPlayer": 2,
               "details": ""
             },
             {
               "text": "[nom] et [nom] distribuez 1 gorgée.",
               "type": "normal",
-              "minPlayer": 2,
               "details": ""
             },
             {
               "text": "[nom] et [nom] distribuez 1 gorgée.",
               "type": "normal",
-              "minPlayer": 2,
               "details": ""
             },
             {
               "text": "[nom] distribue 2 gorgée.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] boit 1 gorgée.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Ceux qui ont les yeux bleus, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Ceux qui ont les yeux marrons, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Temps mort ! Si l’heure indique un chiffre pair, buvez tous 3 gorgées, sinon [nom] en boit le double.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Ceux qui ont les yeux verts, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Ceux qui ont les yeux gris ou noirs, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Les blondinet(te)s, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Les brun(e)s, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Les personnes qui ont un ou plusieurs e dans leur prénom, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Vrai ou faux, [nom] donne une affirmation sur toi, les personnes qui se trompent, boivent 3 gorgées.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Action ou vérité ! [nom] commence.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] choisit un mot. La première personne qui chante un bout de la chanson contenant le mot distribue 2 gorgées.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux se mariera en premier. Félicitation ! 3 gorgées pour le/la marié(e).",
               "type": "normal",
-              "minPlayer": 3,
               "details": ""
             },
             {
               "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux est le plus con selon toi. Le débilos boira 3 gorgées.",
               "type": "normal",
-              "minPlayer": 3,
               "details": ""
             },
             {
               "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux est le plus beau selon toi. Mister/Miss univers boira 3 gorgées.",
               "type": "normal",
-              "minPlayer": 3,
               "details": ""
             },
             {
               "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux est le plus moche selon toi. Mister/Miss moche boira 3 gorgées. ",
               "type": "normal",
-              "minPlayer": 3,
               "details": ""
             },
             {
               "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux est le plus susceptible de finir sous un pont. Le SDF va boire 3 gorgées pour se réchauffer.",
               "type": "normal",
-              "minPlayer": 3,
               "details": ""
             },
             {
               "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux pue le plus selon toi. Le crado boira 3 gorgées.",
               "type": "normal",
-              "minPlayer": 3,
               "details": ""
             },
             {
               "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux s'habille le plus mal selon toi. Cette personne boira 2 gorgées.",
               "type": "normal",
-              "minPlayer": 3,
               "details": ""
             },
             {
               "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux est le plus mauvais coup selon toi. Cette personne boira 2 gorgées.",
               "type": "normal",
-              "minPlayer": 3,
               "details": ""
             },
             {
               "text": "Le guy en titre, boit 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Le guy en titre, distribue 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux qui on déjà dit à un enfant que le père noël n'existait pas. Buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux qui se sont déjà battus. Buvez 3 gorgées, c'est pas bien de se battre.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux qui ont déjà été suspecté de covid. Buvez 3 gorgées et écartez-vous d'un mètre.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux qui se ont déjà largué quelqu'un par SMS. Buvez 3 gorgées, c'est pas cool.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux qui se sont déjà fait larguer quelqu'un par SMS. Distribuez 3 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Toutes les personnes présentes dans le répertoire téléphonique de [nom]. Buvez 3 gorgées. Dans le cas contraire, distribuez 1.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Celles et ceux qui ont déjà vomi à cause de l'alcool. Buvez 2 gorgées. Un vomi et ça repart.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Distribuez autant de gorgées que de frères et soeurs que vous avez.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux dont le jour d'anniversaire est un nombre impair. Buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux dont le jour d'anniversaire est un nombre pair. Buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Votez tous en même temps : plutôt masturbation de la main droite ou de la main gauche ? La minorité boit 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Votez tous en même temps : pour ou contre les coups d'un soir ? La minorité boit 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Votez tous en même temps : plutôt avoir un partenaire plus vieux ou plus jeune ? La minorité boit 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Votez tous en même temps : plutôt brun(e) ou blond(e) ? La minorité boit 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Votez tous en même temps : plutôt faire l'amour le matin ou le soir ? La minorité boit 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Votez tous en même temps : plutôt masturbation le matin ou le soir ? La minorité boit 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Les personnes qui ont un e dans leur prénom, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Les personnes qui ont un a dans leur prénom, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Les personnes qui ont un i dans leur prénom, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Ceux qui ont déjà pris une cuite, buvez 2 gorgées",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux qui sont percés ou tatoués, buvez 3 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux qui ont déjà eu un rêve érotique, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux qui ont déjà eu un rêve érotique avec quelqu'un présent dans la pièce, buvez 3 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux qui ont déjà eu un crush sur quelqu'un dans la pièce, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux qui ont moins de 20 ans, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Celles et ceux qui ont plus de 20 ans, buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Les filles, élisez le plus beau garçon de la soirée. L'Apollon boira 3 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Les garçons, élisez la plus belle fille de la soirée. Vénus boira 3 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "[nom] désigne qui est le plus beau garçon de la soirée. Il boira 3 gorgées.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] désigne qui est la plus belle fille de la soirée. Elle boira 3 gorgées.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Buvez 3 gorgées si vous avez déjà été en confinement, LOL. Allez, buvons pour oublier.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "[nom] invente une nouvelle règle.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] invente une nouvelle règle.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Jeu du con. A tour de rôle, désignez quelqu’un qui va boire 1 gorgée. [nom] commence.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] mime un joueur, le premier a trouvé, distribue 3 gorgées.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] mime un joueur, le premier a trouvé, distribue 3 gorgées.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Chifoumi ! [nom] et [nom] se défient au chifoumi, le perdant boit 2 gorgées.",
               "type": "normal",
-              "minPlayer": 2,
               "details": ""
             },
             {
               "text": "Bras de fer chinois ! [nom] et [nom] se défient, 2 gorgées pour le perdant.",
               "type": "normal",
-              "minPlayer": 2,
               "details": ""
             },
             {
               "text": "Enumérez chacun votre tour, les qualités qu’une femme devrait avoir. Celui ou celle qui répète ou n’a plus d’idée boit 3 gorgées. [nom] commence.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Enumérez chacun votre tour, les qualités qu’un homme devrait avoir. Celui ou celle qui répète ou n’a plus d’idée boit 3 gorgées. [nom] commence. ",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Action ou vérité ! [nom] commence.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Action ou vérité ! [nom] commence.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Temps mort ! Si l’heure indique un chiffre pair, buvez tous 2 gorgées, sinon [nom] en boit le double.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Vrai ou faux, [nom] donne une affirmation sur toi, les personnes qui se trompent, boivent 3 gorgées.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Vrai ou faux, [nom] donne une affirmation sur toi, les personnes qui se trompent, boivent 3 gorgées.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Votez tous, la minorité boit 3 gorgées : mieux vaut avoir l’alcool mauvais mais ne pas avoir les symptômes de la gueule de bois ou tout l’inverse ?",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Les filles distribuent 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Les garçons distribuent 2 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "[nom], [nom] et [nom],buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 3,
               "details": ""
             },
             {
               "text": "[nom] boit autant de gorgées que de râteaux pris.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] distribue autant de gorgées que tu as eu de partenaires.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] dévoile nous le surnom dont tu as le plus honte ou bois 3 gorgées.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] boit autant de gorgées que de râteaux mis.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom], [nom] et [nom], buvez 2 gorgées.",
               "type": "normal",
-              "minPlayer": 3,
               "details": ""
             },
             {
               "text": "[nom] et [nom] se regardent droit dans les yeux, le premier qui cligne des yeux boit 2 gorgées.",
               "type": "normal",
-              "minPlayer": 2,
               "details": ""
             },
             {
               "text": "Enumérez chacun votre tour, des motifs d’excuses utilisés lors d’une rupture (ex : Ce n’est pas toi, c’est moi). Celui ou celle qui répète ou n’a plus d’idée boit 3 gorgées. [nom] commence. ",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Quand l’heure affichera un multiple de 20, le premier joueur à crier « Agrandissez la taille de votre pénis de 5.5cm » distribue 4 gorgées. ",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "[nom] choisit entre donner 3 gorgées à [nom] ou bien une gorgée pour tous.",
               "type": "normal",
-              "minPlayer": 2,
               "details": ""
             },
             {
               "text": "[nom] distribue autant de gorgées qu’il trouve de qualités à [nom].",
               "type": "normal",
-              "minPlayer": 2,
               "details": ""
             },
             {
               "text": "La personne qui lit cette phrase boit 2 gorgées, la personne à ta droite te suit.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Ceux qui se sont déjà dit qu’être du sexe opposé était mieux. Buvez 3 gorgées.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "[nom] montre les cinq dernières photos de ton portable ou bois 3 gorgées.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] boit une gorgée pour chaque fille présente. ",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "[nom] boit une gorgée pour chaque garçon présent.",
               "type": "normal",
-              "minPlayer": 1,
               "details": ""
             },
             {
               "text": "Distribuez 1 gorgée par animaux domestiques que vous possédez.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Bois 2 gorgées si tu as déjà pécho sur un slow.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Bois 2 gorgées si tu as déjà pécho en soirée.",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "Bois 2 gorgées si tu as déjà ",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "",
               "type": "normal",
-              "minPlayer": 0,
               "details": ""
             },
             {
               "text": "[nom] ne peut désormais plus rien faire sans son serviteur [nom], le serviteur devra aider son maître à boire, à manger, etc.",
               "type": "virus",
-              "minPlayer": 2,
               "details": "[nom] n'a plus besoin de son serviteur."
             },
             {
               "text": "[nom] et [nom] sont désormais des jumeaux, ils doivent boire à chaque fois que l’un boit.",
               "type": "virus",
-              "minPlayer": 2,
               "details": "[nom] et [nom] ne sont plus des jumeaux"
             },
             {
               "text": "[nom] et [nom] sont désormais des jumeaux, ils doivent boire à chaque fois que l’un boit.",
               "type": "virus",
-              "minPlayer": 2,
               "details": "[nom] et [nom] ne sont plus des jumeaux"
             },
             {
               "text": "[nom] et [nom] sont désormais des jumeaux, ils doivent boire à chaque fois que l’un boit.",
               "type": "virus",
-              "minPlayer": 2,
               "details": "[nom] et [nom] ne sont plus des jumeaux"
             },
             {
               "text": "Tout le monde change de prénom ! Vous prenez le prénom de la personne à votre droite, 1 gorgée à chaque erreur.",
               "type": "virus",
-              "minPlayer": 0,
               "details": "Reprenez tous votre prénom."
             },
             {
               "text": "[nom] est maintenant le barman ! Il doit servir tous les verres.",
               "type": "virus",
-              "minPlayer": 1,
               "details": "[nom] n'est plus le barman."
             },
             {
               "text": "[nom] peut transférer ses gorgées à une personne de son choix.",
               "type": "virus",
-              "minPlayer": 1,
               "details": "[nom] ne peut plus transférer ses gorgées."
             },
             {
               "text": "[nom] est un Loveur/euse. La personne doit faire un clin d’œil à toutes les personnes qui croiseront son regard. A chaque oublie, 1 gorgée.",
               "type": "virus",
-              "minPlayer": 1,
               "details": "[nom] n'est plus un loveur"
             },
             {
               "text": "[nom] a les yeux de serpent. Chaque personne qui te regarde dans les yeux bois une gorgée.",
               "type": "virus",
-              "minPlayer": 1,
               "details": "[nom] n'a plus les yeux de serpent."
             },
             {
               "text": "[nom] a les yeux de serpent. Chaque personne qui te regarde dans les yeux bois une gorgée.",
               "type": "virus",
-              "minPlayer": 1,
               "details": "[nom] n'a plus les yeux de serpent."
             },
             {
               "text": "Règle du pantin !",
               "type": "virus",
-              "minPlayer": 0,
               "details": "Plus de pantin !"
             },
             {
               "text": "[nom] est le timide de la soirée. Il/elle ne peut répondre à aucune question sous peine de 2 gorgées.",
               "type": "virus",
-              "minPlayer": 1,
               "details": "[nom] n'est plus timide"
             },
             {
               "text": "[nom] tu es un génie maudit, et tu dois obéir à un vœu de la part de [nom], si tu refuses tu devras finir ton verre.",
               "type": "virus",
-              "minPlayer": 2,
               "details": "[nom] n'est plus un génie maudit"
             },
             {
               "text": "Tout le monde doit poser sa main gauche sur la jambe de son voisin de gauche, le premier qui la retire, fini son verre.",
               "type": "virus",
-              "minPlayer": 0,
               "details": "Vous pouvez enlever votre main"
             },
             {
               "text": "[nom] et [nom], vous êtes liés par l’amour. Par galanterie, vous buvez les gorgées de votre partenaire.",
               "type": "virus",
-              "minPlayer": 2,
               "details": "[nom] et [nom] n'êtes plus liés par l'amour"
             },
             {
               "text": "[nom] et [nom], vous êtes liés par l’amour. Par galanterie, vous buvez les gorgées de votre partenaire.",
               "type": "virus",
-              "minPlayer": 2,
               "details": "[nom] et [nom] n'êtes plus liés par l'amour"
             }
         ]
@@ -760,1039 +635,871 @@
         {
           "text": "Cul sec social",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Les filles, élisez le plus beau garçon de la soirée. L'Apollon boira 5 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Les garçons, élisez la plus belle fille de la soirée. Vénus boira 5 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] désigne qui est le plus beau garçon de la soirée. Il boira 5 gorgées.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] désigne qui est la plus belle fille de la soirée. Elle boira 5 gorgées.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Ceux qui ont déjà vu Kaamelott, buvez autant de gorgées que de saisons vues.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Ceux qui ont déjà pris une cuite, buvez 5 gorgées",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Cul sec pour [nom] et [nom]. Vous devez boire les bras entrecroisés.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "Ceux qui sont percés ou tatoués, montrez-les ou buvez 5 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Si tu as déjà eu un rêve érotique, bois 3 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Si tu as déjà utilisé des préservatifs parfumés ou fluorescents, bois 4 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Si la capote de ton ou ta partenaire a déjà craqué, bois 4 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "La race Aryenne boit 4 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] dessine quelque chose sur la joue de [nom], si l’un refuse 5 gorgées.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "[nom] boit une gorgée dans le verre de chaque participant.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] boit une gorgée pour chaque fille présente. ",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] boit une gorgée pour chaque garçon présent.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Si tu as déjà fumé autres choses que du tabac, bois 4 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Toutes les filles, cul sec !",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Tous les garçons, cul sec !",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Chapeau ! la dernière personne à mettre ses mains sur sa tête, fini son verre.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Buvez autant de gorgées que de partenaires eus au total.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Tout le monde distribue une gorgée au joueur de son choix. ",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Tous les célibataires distribuent 3 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Toutes les personnes en couple distribuent 3 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Buvez 3 gorgées, si vous avez déjà douté de votre orientation sexuel.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] et [nom] buvez 4 gorgées.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "Ceux qui ont les yeux bleus, buvez 3 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Ceux qui ont les yeux marrons, buvez 3 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Ceux qui ont les yeux verts, buvez 3 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Ceux qui ont les yeux gris ou noirs, buvez 3 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Les blondinet(te)s, buvez 3 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Les brun(e)s, buvez 3 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Les personnes qui ont un e dans leur prénom, buvez 4 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Les personnes qui ont un a dans leur prénom, buvez 4 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Les personnes qui ont un i dans leur prénom, buvez 4 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
-          "text": "[nom] embrasse [nom] pendant 5s. Sinon cul sec.",
+          "text": "[nomM] embrasse [nomF] pendant 5s. Sinon cul sec.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "[nom] embrasse toutes les filles. Sinon cul sec.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] embrasse tous les garçons. Sinon cul sec",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Distribuez 3 gorgées par animaux domestiques que vous possédez.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Buvez autant de gorgées que de centimètres d'écart avec [nom].",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Buvez autant de gorgées que de centimètres d'écart avec [nom].",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] enlève un vêtement ou cul sec.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] montre les cinq dernières photos de ton portable ou bois 6 gorgées.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Bois 4 gorgées si tu as déjà pécho sur un slow.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] boit un cul sec et tu pourras en distribuer un.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux seraient le plus susceptible de jouer dans un porno. Rocco Sifredi boira 5 gorgées.",
           "type": "normal",
-          "minPlayer": 3,
           "details": ""
         },
         {
           "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux seraient le plus susceptible de coucher avec quelqu’un pour un pari. Ce fdp boira 5 gorgées.",
           "type": "normal",
-          "minPlayer": 3,
           "details": ""
         },
         {
           "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux seraient capable de se travestir pour de l’argent. Cette personne boira 5 gorgées.",
           "type": "normal",
-          "minPlayer": 3,
           "details": ""
         },
         {
           "text": "[nom] lèche la poitrine de [nom] ou boit 5 gorgées.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "La personne qui lit cette phrase embrasse 2 personnes de son choix ou cul sec.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Cul sec pour toutes les personnes",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Toutes les personnes qui ont un(e) ex, cul sec, buvez pour oublier.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Celles et ceux qui sont déjà sortis avec plusieurs personnes en même temps, buvez 5 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] choisit, soit [nom] boit 4 gorgées, soit [nom] en distribue 3.",
           "type": "normal",
-          "minPlayer": 3,
           "details": ""
         },
         {
           "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux a eu le plus gros chagrin d’amour. Cette personne boira 5 gorgées pour oublier.",
           "type": "normal",
-          "minPlayer": 3,
           "details": ""
         },
         {
           "text": "[nom] fait toi pincer les fesses par [nom] ou bois 4 gorgées.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "[nom], soit tu embrasses [nom], soit tu bois cul sec.",
           "type": "normal",
-          "minPlayer": 2,
+          "details": ""
+        },
+        {
+          "text": "[nomF], soit tu embrasses [nomM], soit tu bois cul sec.",
+          "type": "normal",
           "details": ""
         },
         {
           "text": "[nom] récite l’alphabet à l’envers, une gorgée à chaque erreur.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] distribue autant de gorgées qu’il trouve de qualités à [nom].",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "Cul sec pour [nom], [nom]. Vous devez boire les bras entrecroisés.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "Quand l’heure affichera un multiple de 20, le premier joueur à crier « Agrandissez la taille de votre pénis de 5.5cm » distribue 10 gorgées. ",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Bois 5 gorgées, si tu as récemment fait des rêves que tu ne pourras jamais raconter à personne…",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] choisit entre donner 4 gorgées à [nom] ou bien une gorgée pour tous.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "Ceux qui ont déjà envoyé des nudes vont nous faire le plaisir de boire 4 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] à toi de juger : entre [nom] et [nom], qui sera le premier à se marier ?, le/la marié(e) boira 5 gorgées",
           "type": "normal",
-          "minPlayer": 3,
           "details": ""
         },
         {
           "text": "[nom] trouve un argument pour prouver que [nom] n’est pas le pire des enfoirés.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "Ceux qui se sont déjà engueulés avec l’un des joueurs présents, deux gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Ceux qui se sont déjà dit qu’être du sexe opposé était mieux. Buvez 3 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Ceux qui ont déjà été en cours ou au travail saoulent. Buvez 3 gorgées, 2 de plus si vous avez cours/travail demain !",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] dévoile nous le surnom dont tu as le plus honte ou bois 4 gorgées.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Qui pourrait sortir avec une personne pour l’argent ? Ces personnes boiront 5 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Ceux qui sont pour les coups d’un soir, buvez 2 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Tout le monde donne une fessée à [nom] ou il boit son verre cul sec.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "La personne avec la plus grosse poitrine a deux choix : soit montrer un bout du bonnet de son soutien-gorge et distribuer un shot ou un cul sec soit ne rien faire du tout.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "La personne avec la plus petite poitrine a deux choix : soit montrer un bout du bonnet de son soutien-gorge et distribuer un shot ou un cul sec soit ne rien faire du tout.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Celui qui enlève son t-shirt en premier distribue 5 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] enlève un vêtement, sinon tu bois cul sec",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "La personne qui a rempli son verre en dernier, le finis cul sec.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] distribue autant de gorgées que tu as eu de partenaires.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom], compte jusqu’à 40 avant que  [nom] termine son verre. Si tu échoues, c’est cul sec pour toi aussi.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "[nom] doit mimer une gâterie avec un objet, s’il refuse SHOT.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] doit mimer une levrette avec une chaise, s’il refuse SHOT.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "La première personne à finir son verre peut distribuer un cul sec !",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Le guy en titre, boit 5 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Le guy en titre, distribue 5 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] boit autant de gorgées que de râteaux pris.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] boit autant de gorgées que de râteaux mis.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom], [nom] et [nom], un petit SHOT GRATUIT.",
           "type": "normal",
-          "minPlayer": 3,
           "details": ""
         },
         {
           "text": "[nom], [nom] et [nom], un petit SHOT GRATUIT.",
           "type": "normal",
-          "minPlayer": 3,
           "details": ""
         },
         {
           "text": "[nom] distribue 1 shot !",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Les filles distribuent 2 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Les garçons distribuent 2 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Tout le monde distribue 1 gorgée.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Chifoumi ! [nom] et [nom] se défient au chifoumi, le perdant boit 5 gorgées.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "Les chaussettes de l’archiduchesse sont sèches ou archisèches. Chacun répète cette phrase, 4 gorgées pour ceux qui échouent. [nom] commence.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Action ou vérité ! [nom] commence.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Votez tous, la minorité boit 5 gorgées : mieux vaut avoir l’alcool mauvais mais ne pas avoir les symptômes de la gueule de bois ou tout l’inverse ?",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Jeu de la bouteille : Soit tu embrasses la personne, soit tu finis ton verre. [nom] commence.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] et [nom] se regardent droit dans les yeux, le premier qui cligne des yeux boit 4 gorgées.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "[nom] boit autant de gorgées qu’il veut, le voisin de droite une de moins, ainsi de suite jusqu’à 0.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] boit autant de gorgées qu’il veut, le voisin de droite une de moins, ainsi de suite jusqu’à 0.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Vrai ou faux, [nom] donne une affirmation sur toi, les personnes qui se trompent, boivent 3 gorgées.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Vrai ou faux, [nom] donne une affirmation sur toi, les personnes qui se trompent, boivent 3 gorgées.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Action ou vérité ! [nom] commence.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] choisit un mot. La première personne qui chante un bout de la chanson contenant le mot distribue 5 gorgées.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Enumérez chacun votre tour, des motifs d’excuses utilisés lors d’une rupture (ex : Ce n’est pas toi, c’est moi). Celui ou celle qui répète ou n’a plus d’idée boit 3 gorgées. [nom] commence. ",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Plutôt piercing ou tatouage ? Votez tous en même temps, 3 gorgées pour la minorité.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "[nom] pose une question. La première personne a trouvé la réponse distribue 4 gorgées.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom], tu as 5 minutes pour finir ton verre, sinon tu embrasses tout le monde.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Temps mort ! Si l’heure indique un chiffre pair, buvez tous 5 gorgées, sinon [nom] en boit le double.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Plutôt masturbation le matin ou le soir ? Votez tous en même temps, 5 gorgées pour la minorité.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Plutôt draguer face to face ou par intermédiaire (sms/réseaux sociaux) ? Votez tous en même temps, 5 gorgées pour la minorité.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Plutôt un partenaire plus vieux ou plus jeune ? Votez tous en même temps, 5 gorgées pour la minorité.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Plutôt être avec un partenaire trop collant ou trop froid ? Votez tous en même temps, 5 gorgées pour la minorité.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Action ou vérité ! [nom] commence.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Action ou vérité ! [nom] commence.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Enumérez chacun votre tour, les qualités qu’une femme devrait avoir. Celui ou celle qui répète ou n’a plus d’idée boit 3 gorgées. [nom] commence.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Enumérez chacun votre tour, les qualités qu’un homme devrait avoir. Celui ou celle qui répète ou n’a plus d’idée boit 3 gorgées. [nom] commence. ",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Qui pourrait ? chacun donne un « qui pourrait ? », votez tous en même temps, la personne désignée boit 4 gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Votez tous : mieux vaut n’avoir connu sexuellement qu’un partenaire (où c’est l’amour fou) ou avoir eu une tonne de partenaires sans s’attacher ? La minorité boit 5 gorgées",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Chifoumi ! [nom] et [nom] se défient au chifoumi, le perdant boit 5 gorgées.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "Bras de fer chinois ! [nom] et [nom] se défient, 5 gorgées pour le perdant.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "Jeu du con. A tour de rôle, désignez quelqu’un qui va boire 2 gorgées. [nom] commence.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] invente une nouvelle règle.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] invente une nouvelle règle.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] invente une nouvelle règle.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Jeu du con. A tour de rôle, désignez quelqu’un qui va boire 2 gorgées. [nom] commence.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] mime un joueur, le premier a trouvé, distribue 6 gorgées.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] mime un joueur, le premier a trouvé, distribue 6 gorgées.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "Jeu souffle et aspire, les personnes qui font tomber le papier, embrassez-vous ou SHOT.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Tout le monde pose sa main au centre, les unes sur les autres, la position correspond au nombre de gorgées.",
           "type": "normal",
-          "minPlayer": 0,
           "details": ""
         },
         {
           "text": "Petit tour de je n’ai jamais ! [nom] commence.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] enlève son haut sinon cette personne boira cul sec son verre.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] enlève un vêtement sinon cette personne boira cul sec son verre.",
           "type": "normal",
-          "minPlayer": 1,
           "details": ""
         },
         {
           "text": "[nom] et [nom] enlèvent leur haut sinon ces personnes boiront cul sec leur verre.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "[nom] et [nom] enlèvent un vêtements sinon ces personnes boiront cul sec leur verre.",
           "type": "normal",
-          "minPlayer": 2,
           "details": ""
         },
         {
           "text": "[nom] tu es le cupidon, tu peux à tout moment demander à deux personnes de s’embrasser ; Si elles refusent, 5 gorgées.",
           "type": "virus",
-          "minPlayer": 1,
           "details": "[nom], tu n'es plus cupidon."
         },
         {
           "text": "[nom] ne peut désormais plus rien faire sans son serviteur [nom], le serviteur devra aider son maître à boire, à manger, etc.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] n'a plus besoin de son serviteur."
         },
         {
           "text": "[nom] et [nom] sont désormais des jumeaux, ils doivent boire à chaque fois que l’un boit.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] ne sont plus des jumeaux"
         },
         {
           "text": "[nom] et [nom] sont désormais des jumeaux, ils doivent boire à chaque fois que l’un boit.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] ne sont plus des jumeaux"
         },
         {
           "text": "[nom] et [nom] sont désormais des jumeaux, ils doivent boire à chaque fois que l’un boit.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] ne sont plus des jumeaux"
         },
         {
           "text": "Tout le monde change de prénom ! Vous prenez le prénom de la personne à votre droite, 3 gorgées à chaque erreur.",
           "type": "virus",
-          "minPlayer": 0,
           "details": "Reprenez tous votre prénom."
         },
         {
           "text": "[nom] est maintenant le barman ! Il doit servir tous les verres.",
           "type": "virus",
-          "minPlayer": 1,
           "details": "[nom] n'est plus le barman."
         },
         {
           "text": "A PARTIR DE MAINTENANT, ON NE MARCHE PLUS ! Les marginaux boivent 5 gorgées.",
           "type": "virus",
-          "minPlayer": 0,
           "details": "Vous pouvez marcher à nouveau."
         },
         {
           "text": "[nom] peut transférer ses gorgées à une personne de son choix.",
           "type": "virus",
-          "minPlayer": 1,
           "details": "[nom] ne peut plus transférer ses gorgées."
         },
         {
           "text": "[nom] est un Loveur/euse. La personne doit faire un clin d’œil à toutes les personnes qui croiseront son regard. A chaque oublie, 2 gorgées.",
           "type": "virus",
-          "minPlayer": 1,
           "details": "[nom] n'est plus un loveur"
         },
         {
           "text": "Règle du pantin !",
           "type": "virus",
-          "minPlayer": 0,
           "details": "Plus de pantin !"
         },
         {
           "text": "[nom] est le timide de la soirée. Il/elle ne peut répondre à aucune question sous peine de 2 gorgées.",
           "type": "virus",
-          "minPlayer": 1,
           "details": "[nom] n'est plus timide"
         },
         {
           "text": "[nom] tu es un génie maudit, et tu dois obéir à un vœu de la part de [nom], si tu refuses tu devras finir ton verre.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] n'est plus un génie maudit"
         },
         {
           "text": "Tout le monde doit poser sa main gauche sur la jambe de son voisin de gauche, le premier qui la retire, fini son verre.",
           "type": "virus",
-          "minPlayer": 0,
           "details": "Vous pouvez enlever votre main"
         },
         {
           "text": "[nom] et [nom], vous êtes liés par l’amour. Par galanterie, vous buvez les gorgées de votre partenaire.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] n'êtes plus liés par l'amour"
         },
         {
           "text": "[nom] et [nom], vous êtes liés par l’amour. Par galanterie, vous buvez les gorgées de votre partenaire.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] n'êtes plus liés par l'amour"
         },
         {
           "text": "[nom] est le pilier du bar, à chaque fois que tu bois, tu dois trinquer avec quelqu’un qui te suivra sur autant de gorgées. ",
           "type": "virus",
-          "minPlayer": 1,
           "details": "[nom] n'est plus le pilier du bar"
         },
         {
           "text": "[nom] a les yeux de serpent.",
           "type": "virus",
-          "minPlayer": 1,
           "details": "[nom] n'a plus les yeux de serpent."
         },
         {
           "text": "[nom] a les yeux de serpent.",
           "type": "virus",
-          "minPlayer": 1,
           "details": "[nom] n'a plus les yeux de serpent."
         },
         {
           "text": "[nom] a les yeux de serpent.",
           "type": "virus",
-          "minPlayer": 1,
           "details": "[nom] n'a plus les yeux de serpent."
         },
         {
           "text": "[nom], [nom]  et  [nom], vous êtes les grenades à fragmentation ! Chaque fois que l’un de vous finit son verre, tout le monde boit. ",
           "type": "virus",
-          "minPlayer": 3,
           "details": "[nom], [nom]  et  [nom] ne sont plus des grenades."
         },
         {
           "text": "[nom] et [nom] échangent leur haut sous peine d'un cul sec.",
           "type": "virus",
-          "minPlayer": 2,
+          "details": "[nom] et [nom] peuvent reprendre leur t-shirt"
+        },
+        {
+          "text": "[nom] échange le vêtement de ton choix avec [nom], si l'un refuse, cul sec !",
+          "type": "virus",
           "details": "[nom] et [nom] peuvent reprendre leur t-shirt"
         },
         {
           "text": "[nom] et [nom] échangent leur haut sous peine d'un cul sec.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] peuvent reprendre leur t-shirt"
         },
         {
           "text": "[nom] et [nom] échangent leur haut sous peine d'un cul sec.",
           "type": "virus",
-          "minPlayer": 2,
-          "details": "[nom] et [nom] peuvent reprendre leur t-shirt"
-        },
-        {
-          "text": "[nom] et [nom] échangent leur haut sous peine d'un cul sec.",
-          "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] peuvent reprendre leur t-shirt"
         },
         {
           "text": "[nom] et [nom] échangent un vêtement sous peine d'un cul sec.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] peuvent reprendre leur vêtement"
         },
         {
           "text": "[nom] et [nom] échangent un vêtement sous peine d'un cul sec.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] peuvent reprendre leur vêtement"
         },
         {
           "text": "[nom], tu es le petit toutou de [nom], tu dois exécuter tous les ordres qu’il/elle te donne, ou tu bois 4 gorgées.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] n'est plus le toutou de [nom]."
         },
         {
           "text": "[nom] et [nom] sont désormais des jumeaux, ils doivent boire à chaque fois que l’un boit.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] ne sont plus jumeaux"
         },
         {
           "text": "[nom] et [nom] sont désormais des jumeaux, ils doivent boire à chaque fois que l’un boit.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] ne sont plus jumeaux"
         },
         {
           "text": "[nom] et [nom] sont désormais des jumeaux, ils doivent boire à chaque fois que l’un boit.",
           "type": "virus",
-          "minPlayer": 2,
           "details": "[nom] et [nom] ne sont plus jumeaux"
         },
         {
           "text": "[nom], qui préfères-tu embrasser entre [nom] et [nom] ? La bouche sulfureuse boira 4 gorgées",
           "type": "virus",
-          "minPlayer": 3,
           "details": "[nom] va nous faire le plaisir d'embrasser la personne qu'elle/il avait choisi entre [nom] et [nom], en cas de refus : 1 cul sec."
         },
         {
           "text": "[nom], qui préfères-tu embrasser entre [nom] et [nom] ? 5 gorgées pour la personne désignée.",
           "type": "virus",
-          "minPlayer": 3,
           "details": "[nom] va nous faire le plaisir d'embrasser la personne qu'elle/il avait choisi entre [nom] et [nom], en cas de refus : 1 cul sec."
         },
         {
           "text": "[nom] à toi de juger : entre [nom] et [nom], qui embrasse le mieux ? La personne désignée boira 5 gorgées.",
           "type": "virus",
-          "minPlayer": 3,
           "details": "[nom] va nous faire le plaisir d'embrasser la personne qu'elle/il a choisi."
         },
         {
           "text": "[nom] à toi de juger : entre [nom] et [nom], qui s'habille le mieux ? La fashionista boira 5 gorgées.",
           "type": "virus",
-          "minPlayer": 3,
           "details": "[nom] va nous faire le plaisir de mettre le haut de la fashionista."
         },
         {
           "text": "[nom] à toi de juger : entre [nom] et [nom], qui est le mieux foutu selon toi ? L'Apollon boira 5 gorgées.",
           "type": "virus",
-          "minPlayer": 3,
           "details": "[nom] va retirer le haut de l'Apollon elle-même."
         }
       ]
