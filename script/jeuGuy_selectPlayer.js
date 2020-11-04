@@ -32,10 +32,10 @@ function addPlayer(name, gender) {
 	if (gender == null) {gender = (nbLiPlayers % 2) ? "M" : "F"};
 	const choiceSex = document.createElement("div");
 	choiceSex.classList.add("genderChoice");
-	choiceSex.innerHTML = "<input type=\"radio\" id=\"femmeInput\" name=\"genderInput" + nbLiPlayers + "\"" + ((gender == "F") ? " checked />" : "/>");
-	choiceSex.innerHTML += "<label for=\"femmeInput\">♀</label>";
-	choiceSex.innerHTML += "<input type=\"radio\" id=\"hommeInput\" name=\"genderInput" + nbLiPlayers + "\"" + ((gender == "M") ? " checked />" : "/>");
-	choiceSex.innerHTML += "<label for=\"hommeInput\">♂</label>";
+	choiceSex.innerHTML = "<input type=\"radio\" id=\"femmeInput" + nbLiPlayers + "\" name=\"genderInput" + nbLiPlayers + "\"" + ((gender == "F") ? " checked />" : "/>");
+	choiceSex.innerHTML += "<label for=\"femmeInput" + nbLiPlayers + "\">♀</label>";
+	choiceSex.innerHTML += "<input type=\"radio\" id=\"hommeInput" + nbLiPlayers + "\" name=\"genderInput" + nbLiPlayers + "\"" + ((gender == "M") ? " checked />" : "/>");
+	choiceSex.innerHTML += "<label for=\"hommeInput" + nbLiPlayers + "\">♂</label>";
 	newPlayerLi.appendChild(choiceSex);
 
 	//On ajoute le bouton pour supprimer

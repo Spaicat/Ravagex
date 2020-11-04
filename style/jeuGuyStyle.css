@@ -121,6 +121,7 @@ body {
 				font-size: 20px;
 			}
 			.name-entry-container button {
+				min-width: max-content;
 				width: fit-content;
 			}
 		#menu-players {
@@ -149,6 +150,29 @@ body {
 					overflow: hidden;
 					text-overflow: ellipsis;
 				}
+				.genderChoice {
+					display: flex;
+				}
+				.genderChoice input {
+					display: none;
+				}
+				.genderChoice label {
+					cursor: pointer;
+					display: flex;
+					margin-right: 0.3em;
+					width: 32px;
+					height: 32px;
+					justify-content: center;
+					align-items: center;
+					border-radius: 50%;
+					font-family: monospace;
+					font-size: 30px;
+					box-sizing: border-box;
+				}
+				.genderChoice input:checked + label{
+					background-color: var(--btn-color);
+					color: black;
+				}
 				.btn-remove {
 					display: flex;
 					height: 32px;
@@ -156,7 +180,7 @@ body {
 					overflow: hidden;
 					background: none;
 					border: none;
-					border-radius: 30px;
+					border-radius: 50%;
 					fill: white;
 				}
 				.btn-remove:hover {
