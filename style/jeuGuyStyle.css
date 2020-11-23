@@ -3,6 +3,9 @@
 	--btn-color: #84FFB9;
 	--btn-color-error: #DC6379;
 	--btn-color-hover: #BEFFDA;
+	--axis-x: 10px;
+	--axis-y: 2rem;
+	--delay: 10;
 }
 
 body {
@@ -89,13 +92,66 @@ body {
 		text-align: center;
 	}
 		#jeuGuy-title {
+			position: relative;
 			margin: auto;
-			padding: 1em 2em;
+			padding: 1em 0;
 			max-width: 50em;
 		}
-			#jeuGuy-logo {
+			.jeuGuy-logo:first-child {
 				fill: white;
 			}
+			.jeuGuy-logo {
+				fill: var(--btn-color);
+				width: 100%;
+				height: 100%;
+				stroke: black;
+				stroke-width: 2px;
+				stroke-linejoin: round;
+				paint-order: stroke;
+				overflow: inherit;
+				animation: rainbow 1.5s ease-in-out infinite;
+			}
+			.jeuGuy-logo:not(:first-child) {
+				position: absolute;
+				top: 0;
+			}
+			.jeuGuy-logo:nth-child(1) {
+				animation-delay: calc(1 / var(--delay) * 1s);
+				left: calc(var(--axis-x) * 1);
+				z-index: -10;
+			}
+			.jeuGuy-logo:nth-child(2) {
+				animation-delay: calc(2 / var(--delay) * 1s);
+				left: calc(var(--axis-x) * 2);
+				z-index: -20;
+				filter: blur(1px);
+			}
+			.jeuGuy-logo:nth-child(3) {
+				animation-delay: calc(3 / var(--delay) * 1s);
+				left: calc(var(--axis-x) * 3);
+				z-index: -30;
+				filter: blur(2px);
+			}
+			.jeuGuy-logo:nth-child(4) {
+				animation-delay: calc(4 / var(--delay) * 1s);
+				left: calc(var(--axis-x) * 4);
+				z-index: -40;
+				filter: blur(3px);
+			}
+			.jeuGuy-logo:nth-child(5) {
+				animation-delay: calc(5 / var(--delay) * 1s);
+				left: calc(var(--axis-x) * 5);
+				z-index: -50;
+				filter: blur(4px);
+			}
+			@keyframes rainbow {
+				0%, 100% {
+					transform: translatey(var(--axis-y));
+				}
+				50% {
+					transform: translatey(calc(var(--axis-y) * -1));
+				}
+			  }
 		#select-box > span {
 			font-size: 22px;
 		}
