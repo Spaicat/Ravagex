@@ -6,6 +6,21 @@ guyMenu.addEventListener("click", removePlayer);
 guyMenu.addEventListener("input", focusNameField);
 nameEntryButton.addEventListener("click", addPlayerEvent);
 
+let posXLogoAnimation = 0;
+window.addEventListener("mousemove", (event) => {
+	posXLogoAnimation = window.innerWidth/2-event.clientX;
+	if (event.clientX > window.innerWidth/2) {
+		posXLogoAnimation = -event.clientX+window.innerWidth/2;
+	}
+	posXLogoAnimation /= 30;
+	requestAnimationFrame(updateAnimation);
+});
+
+function updateAnimation() {
+	console.log(posXLogoAnimation);
+	document.documentElement.style.setProperty("--axis-x", posXLogoAnimation + "px");
+}
+
 function addPlayerEvent(e) {
 	item = e.target;
 	if (item.parentElement.classList[0] == "name-entry-container") {
