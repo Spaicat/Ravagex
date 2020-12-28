@@ -224,7 +224,7 @@ function nextSentence() {
         progressBarChange();
     }
     else {
-        window.location = "../jeuGuy/play.php"
+        window.location = "../jeuGuy/play.html"
     }
 }
 

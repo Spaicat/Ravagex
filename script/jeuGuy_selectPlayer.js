@@ -1,10 +1,12 @@
 const guyMenu = document.querySelector("#menu-players");
 const nameEntryButton = document.querySelector(".name-entry-container button");
+const nameEntryTextbox = document.querySelector(".name-entry-container .name-entry");
 
 //Event listener
 guyMenu.addEventListener("click", removePlayer);
 guyMenu.addEventListener("input", focusNameField);
 nameEntryButton.addEventListener("click", addPlayerEvent);
+nameEntryTextbox.addEventListener("keyup", addPlayerByKey);
 
 let posXLogoAnimation = 0;
 window.addEventListener("mousemove", (event) => {
@@ -27,6 +29,13 @@ function addPlayerEvent(e) {
 		const nameEntry = document.querySelector(".name-entry");
 		addPlayer(nameEntry.value);
 		nameEntry.value = "";
+	}
+}
+
+function addPlayerByKey(event) {
+	event.preventDefault();
+	if (event.keyCode === 13) {
+		nameEntryButton.click();
 	}
 }
 
@@ -162,7 +171,7 @@ function loadGame(namesOfPlayers, gameMode) {
 	localStorage.removeItem("gameMode");
 	localStorage.setItem("gameMode", gameMode);
 
-    window.location='play.php';
+    window.location='play.html';
 }
 
 function loadPlayers() {
