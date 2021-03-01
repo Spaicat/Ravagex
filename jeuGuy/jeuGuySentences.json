@@ -626,6 +626,21 @@
               "text": "[nom] et [nom], vous êtes liés par l’amour. Par galanterie, vous buvez les gorgées de votre partenaire.",
               "type": "virus",
               "details": "[nom] et [nom] n'êtes plus liés par l'amour"
+            },
+            {
+              "text": "[nomF], Minutes au paradis. Restez pendant 2 minutes dans une petite pièce close avec [nomM] et faites ce que bon vous semble. Le refus n'est pas une option",
+              "type": "normal",
+              "details": ""
+            },
+            {
+              "text": "[nomM], Minutes au paradis. Restez pendant 2 minutes dans une petite pièce close avec [nomM] et faites ce que bon vous semble. Le refus n'est pas une option",
+              "type": "normal",
+              "details": ""
+            },
+            {
+              "text": "[nomF], Minutes au paradis. Restez pendant 2 minutes dans une petite pièce close avec [nomF] et faites ce que bon vous semble. Le refus n'est pas une option",
+              "type": "normal",
+              "details": ""
             }
         ]
     },
@@ -924,6 +939,11 @@
         },
         {
           "text": "[nomF], soit tu embrasses [nomM], soit tu bois cul sec.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "Tibo finit tous les fonds de verre, sinon tu finis tous les fonds de bouteille. AHAH LOL MDR",
           "type": "normal",
           "details": ""
         },
@@ -1503,10 +1523,46 @@
           "details": "[nom] va retirer le haut de l'Apollon elle-même."
         },
         {
-          "text": "[nom] et [nom], 2 minutes au paradis, faites ce que bon vous semble. Le refus n'est pas une option",
+          "text": "[nomF], Minutes au paradis. Restez pendant 2 minutes dans une petite pièce close avec [nomM] et faites ce que bon vous semble. Le refus n'est pas une option",
           "type": "normal",
           "details": ""
+        },
+        {
+          "text": "[nomM], Minutes au paradis. Restez pendant 2 minutes dans une petite pièce close avec [nomM] et faites ce que bon vous semble. Le refus n'est pas une option",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "[nomF], Minutes au paradis. Restez pendant 2 minutes dans une petite pièce close avec [nomF] et faites ce que bon vous semble. Le refus n'est pas une option",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "[nomF], fais un pierre, feuille, ciseaux contre [nomF]. La gagnante aura une récompense qui arrivera plus tard.",
+          "type": "virus",
+          "details": "La gagnante du pierre, feuille, ciseaux embrasse la personne de son choix"
+        },
+        {
+          "text": "[nomM], fais un pierre, feuille, ciseaux contre [nomM]. Le gagnant aura une récompense qui arrivera plus tard.",
+          "type": "virus",
+          "details": "Le gagnant du pierre, feuille, ciseaux embrasse la personne de son choix"
+        },
+        {
+          "text": "[nomF], fais un pierre, feuille, ciseaux contre [nomM]. Le gagnant aura une récompense qui arrivera plus tard.",
+          "type": "virus",
+          "details": "Le gagnant du pierre, feuille, ciseaux embrasse la personne de son choix"
+        },
+        {
+          "text": "[nomF] désigne la personne avec qui tu aimerais le plus couché.",
+          "type": "virus",
+          "details": "[nomF], on a décidé de te donner un petit coup de pouce, embrasse la personne que tu as choisi. No choice sinon tu bois cul sec."
+        },
+        {
+          "text": "[nomM] désigne la personne avec qui tu aimerais le plus couché. No choice sinon tu bois cul sec.",
+          "type": "virus",
+          "details": "[nomM], on a décidé de te donner un petit coup de pouce, embrasse la personne que tu as choisi."
         }
+        
       ]
     }
 }
