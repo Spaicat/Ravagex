@@ -641,6 +641,21 @@
               "text": "[nomF], Minutes au paradis. Restez pendant 2 minutes dans une petite pièce close avec [nomF] et faites ce que bon vous semble. Le refus n'est pas une option",
               "type": "normal",
               "details": ""
+            },
+            {
+              "text": "[nom] boit autant de gorgées que tu as d'ex, si tu n'en as pas, distribue 2 gorgées.",
+              "type": "normal",
+              "details": ""
+            },
+            {
+              "text": "Plutôt Vodka ou Whisky ? Votez tous en même temps, les personnes minoritaires boivent chacune 3 gorgées.",
+              "type": "normal",
+              "details": ""
+            },
+            {
+              "text": "Ceux qui ont renversés au moins un verre boivent 3 gorgées, mérité !",
+              "type": "normal",
+              "details": ""
             }
         ]
     },
@@ -1583,7 +1598,7 @@
           "details": ""
         },
         {
-          "text": "Plutôt Vodka ou Whisky ? Votez tous en même temps, les personnes minoritaires boivent chacune 3 gorgées.",
+          "text": "Plutôt Vodka ou Whisky ? Votez tous en même temps, les personnes minoritaires boivent chacune 4 gorgées.",
           "type": "normal",
           "details": ""
         },
