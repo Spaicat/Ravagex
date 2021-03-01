@@ -1606,6 +1606,11 @@
           "text": "Ceux qui ont renversés au moins un verre boivent 4 gorgées, mérité !",
           "type": "normal",
           "details": ""
+        },
+        {
+          "text": "[nom] qui de [nom] et [nom] à les sous-vêtements les plus sexy ? 4 gorgées pour cette personne.",
+          "type": "normal",
+          "details": ""
         }
       ]
     }
