@@ -1566,6 +1566,31 @@
           "text": "Les filles qui ont leurs règles peuvent distribuer 4 gorgées.",
           "type": "normal",
           "details": ""
+        },
+        {
+          "text": "La première personne à enlever un vêtement pourra distribuer 5 gorgées.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "Moment sport ! [nom] fait autant de pompes que tu veux, tu pourras distribuer autant de gorgées que de pompes réalisées (pas de pauses).",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "[nom] boit autant de gorgées que tu as d'ex, si tu n'en as pas, distribue 3 gorgées.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "Plutôt Vodka ou Whisky ? Votez tous en même temps, les personnes minoritaires boivent chacune 3 gorgées.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "Ceux qui ont renversés au moins un verre boivent 4 gorgées, mérité !",
+          "type": "normal",
+          "details": ""
         }
       ]
     }
