@@ -1501,6 +1501,11 @@
           "text": "[nom] à toi de juger : entre [nom] et [nom], qui est le mieux foutu selon toi ? L'Apollon boira 5 gorgées.",
           "type": "virus",
           "details": "[nom] va retirer le haut de l'Apollon elle-même."
+        },
+        {
+          "text": "[nom] et [nom], 2 minutes au paradis, faites ce que bon vous semble. Le refus n'est pas une option",
+          "type": "normal",
+          "details": ""
         }
       ]
     }
