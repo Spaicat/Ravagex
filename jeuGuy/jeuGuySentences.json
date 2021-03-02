@@ -1038,12 +1038,12 @@
           "details": ""
         },
         {
-          "text": "La personne avec la plus grosse poitrine a deux choix : soit montrer un bout du bonnet de son soutien-gorge et distribuer un shot ou un cul sec soit ne rien faire du tout.",
+          "text": "La personne avec la plus grosse poitrine a deux choix : soit montrer un bout du bonnet de son soutien-gorge et distribuer 10 gorgées soit ne rien faire du tout.",
           "type": "normal",
           "details": ""
         },
         {
-          "text": "La personne avec la plus petite poitrine a deux choix : soit montrer un bout du bonnet de son soutien-gorge et distribuer un shot ou un cul sec soit ne rien faire du tout.",
+          "text": "La personne avec la plus petite poitrine a deux choix : soit montrer un bout du bonnet de son soutien-gorge et distribuer 10 gorgées soit ne rien faire du tout.",
           "type": "normal",
           "details": ""
         },
@@ -1503,11 +1503,6 @@
           "details": "[nom] et [nom] ne sont plus jumeaux"
         },
         {
-          "text": "[nom] et [nom] sont désormais des jumeaux, ils doivent boire à chaque fois que l’un boit.",
-          "type": "virus",
-          "details": "[nom] et [nom] ne sont plus jumeaux"
-        },
-        {
           "text": "[nom], qui préfères-tu embrasser entre [nom] et [nom] ? La bouche sulfureuse boira 4 gorgées",
           "type": "virus",
           "details": "[nom] va nous faire le plaisir d'embrasser la personne qu'elle/il avait choisi entre [nom] et [nom], en cas de refus : 1 cul sec."
@@ -1609,6 +1604,31 @@
         },
         {
           "text": "[nom] qui de [nom] et [nom] à les sous-vêtements les plus sexy ? 4 gorgées pour cette personne.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "[nom] embrasse une personne qui a du rouge à lèvres, en cas de refus c'est 8 gorgées. Si personne n'a de rouge à lèvres, tu peux boire 5 gorgées.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "Buvez 4 gorgées si vous avez des cheveux qui arrivent au moins jusqu'aux épaules.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "Bras de fer ! [nomF] et [nomF] se défient, 4 gorgées pour le perdant.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "Bras de fer ! [nomM] et [nomM] se défient, 4 gorgées pour le perdant.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "Le lait, avant ou après les céréales ? Toutes les personnes ayant voté avant les céréales, vous devrez désormais mettre votre diluant avant l'alcool.",
           "type": "normal",
           "details": ""
         }
