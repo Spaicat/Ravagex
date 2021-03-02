@@ -17,7 +17,6 @@ async function getList() {
 function checkFile(fileJSON) {
 	const listEasy = fileJSON.listEasy.sentences;
 	const listHard = fileJSON.listHard.sentences;
-	let regexEltToFind = /\[nom\]/g;
 
 	
 	let checkSentences = (list) => {
@@ -26,6 +25,10 @@ function checkFile(fileJSON) {
 			nbRegex: {nbCulSec: 0, nbVetements: 0, nbEmbrasse: 0}
 		};
 		for (let i = 0; i < list.length; i++) {
+			//On vérifie si la phrase n'est pas vide
+			if (list[i].text === 0)
+				throw Error(`Il n'y a pas de texte (${i})`);
+
 			//On vérifie si les virus ont bien des détails
 			if (list[i].type == "virus" && list[i].details === 0)
 				throw Error(`Il n'y a pas de détails dans le virus suivant : ${list[i].text}`);
