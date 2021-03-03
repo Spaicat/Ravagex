@@ -26,7 +26,7 @@ function checkFile(fileJSON) {
 		};
 		for (let i = 0; i < list.length; i++) {
 			//On vérifie si la phrase n'est pas vide
-			if (list[i].text === 0)
+			if (list[i].text.length === 0)
 				throw Error(`Il n'y a pas de texte (${i})`);
 
 			//On vérifie si les virus ont bien des détails
