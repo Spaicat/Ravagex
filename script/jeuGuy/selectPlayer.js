@@ -19,7 +19,6 @@ window.addEventListener("mousemove", (event) => {
 });
 
 function updateAnimation() {
-	console.log(posXLogoAnimation);
 	document.documentElement.style.setProperty("--axis-x", posXLogoAnimation + "px");
 }
 
