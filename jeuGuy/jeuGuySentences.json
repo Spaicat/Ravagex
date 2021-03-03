@@ -43,7 +43,7 @@
               "details": ""
             },
             {
-              "text": "Les personnes célibataire désignent ensemble une personne qui boira 3 gorgées",
+              "text": "Les personnes célibataires désignent ensemble une personne qui boira 3 gorgées",
               "type": "normal",
               "details": ""
             },
@@ -68,7 +68,7 @@
               "details": ""
             },
             {
-              "text": "[nom] distribue 2 gorgée.",
+              "text": "[nom] distribue 2 gorgées.",
               "type": "normal",
               "details": ""
             },
@@ -656,6 +656,16 @@
               "text": "Ceux qui ont renversés au moins un verre boivent 3 gorgées, mérité !",
               "type": "normal",
               "details": ""
+            },
+            {
+              "text": "[nom], à toi de juger. Avec quelle personne présente pourrait se marier [nom]. Cupidon a parlé. Les deux tourtereaux partageront désormais tout dont leurs gorgées.",
+              "type": "normal",
+              "details": ""
+            },
+            {
+              "text": "Celles et ceux qui se sont déjà moqués d'un handicapé mental ou physique, buvez 3 gorgées. Vous êtes des connards.",
+              "type": "normal",
+              "details": ""
             }
         ]
     },
@@ -828,17 +838,17 @@
           "details": ""
         },
         {
-          "text": "Les personnes qui ont un e dans leur prénom, buvez 4 gorgées.",
+          "text": "Les personnes qui ont un E dans leur prénom, buvez 4 gorgées.",
           "type": "normal",
           "details": ""
         },
         {
-          "text": "Les personnes qui ont un a dans leur prénom, buvez 4 gorgées.",
+          "text": "Les personnes qui ont un A dans leur prénom, buvez 4 gorgées.",
           "type": "normal",
           "details": ""
         },
         {
-          "text": "Les personnes qui ont un i dans leur prénom, buvez 4 gorgées.",
+          "text": "Les personnes qui ont un I dans leur prénom, buvez 4 gorgées.",
           "type": "normal",
           "details": ""
         },
@@ -1628,7 +1638,12 @@
           "details": ""
         },
         {
-          "text": "Le lait, avant ou après les céréales ? Toutes les personnes ayant voté avant les céréales, vous devrez désormais mettre votre diluant avant l'alcool.",
+          "text": "Le lait, avant ou après les céréales ? La minorité boit 3 gorgées.",
+          "type": "virus",
+          "details": "Les personnes ayant choisi le lait avant les céréales devront désormais mettre votre diluant avant l'alcool."
+        },
+        {
+          "text": "[nom], à toi de juger. Avec quelle personne présente pourrait se marier [nom]. Cupidon a parlé. Les deux tourtereaux partageront désormais tout dont leurs gorgées.",
           "type": "normal",
           "details": ""
         }
