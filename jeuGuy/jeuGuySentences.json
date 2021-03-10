@@ -641,6 +641,16 @@
               "text": "Celles et ceux qui se sont déjà moqués d'un handicapé mental ou physique, buvez 3 gorgées. Vous êtes des connards.",
               "type": "normal",
               "details": ""
+            },
+            {
+              "text": "Qui connait le mieux [nom] ? La personne qui répondra le plus rapidement à sa question pourra distribuer 2 gorgées.",
+              "type": "normal",
+              "details": ""
+            },
+            {
+              "text": "Qui connait le mieux [nom] ? La personne qui répondra le plus rapidement à sa question pourra partager ses gorgées avec la personne de son choix.",
+              "type": "normal",
+              "details": ""
             }
         ]
     },
@@ -1619,6 +1629,16 @@
         },
         {
           "text": "[nom], à toi de juger. Avec quelle personne présente pourrait se marier [nom]. Cupidon a parlé. Les deux tourtereaux partageront désormais tout dont leurs gorgées.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "Qui connait le mieux [nom] ? La personne qui répondra le plus rapidement à sa question pourra distribuer 5 gorgées.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "Qui connait le mieux [nom] ? La personne qui répondra le plus rapidement à sa question pourra ajouter de l'alcool dans le verre de la personne de son choix.",
           "type": "normal",
           "details": ""
         }
