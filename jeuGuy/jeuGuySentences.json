@@ -613,6 +613,11 @@
               "details": ""
             },
             {
+              "text": "[nomM], Minutes au paradis. Restez pendant 2 minutes dans une petite pièce close avec [nomM] et faites ce que bon vous semble. Le refus n'est pas une option",
+              "type": "normal",
+              "details": ""
+            },
+            {
               "text": "[nomF], Minutes au paradis. Restez pendant 2 minutes dans une petite pièce close avec [nomF] et faites ce que bon vous semble. Le refus n'est pas une option",
               "type": "normal",
               "details": ""
@@ -1629,6 +1634,11 @@
         },
         {
           "text": "[nom], à toi de juger. Avec quelle personne présente pourrait se marier [nom]. Cupidon a parlé. Les deux tourtereaux partageront désormais tout dont leurs gorgées.",
+          "type": "normal",
+          "details": ""
+        },
+        {
+          "text": "[nom] à toi de juger : entre [nom] et [nom], qui des deux est le plus con selon toi. Le débilos boira 5 gorgées.",
           "type": "normal",
           "details": ""
         },
